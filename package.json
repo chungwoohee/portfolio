@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chungwoohee/portfolio.git"
+  },
+  "author": "정우희",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chungwoohee/portfolio/issues"
+  },
+  "homepage": "https://github.com/chungwoohee/portfolio#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0"
+  }
+}
