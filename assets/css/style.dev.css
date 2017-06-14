@@ -1,20 +1,35 @@
-/* line 1, assets\less\variable.less */
-h1 {
-  border: 1px #F00 solid;
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+/* line 3, assets\less\common.less */
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
-/* line 1, assets\less\mixin.less */
-h1 {
-  border: 1px #F00 solid;
+/* line 4, assets\less\common.less */
+body {
+  font-family: 'Nanum Gothic Coding', monospace;
 }
-/* line 1, assets\less\common.less */
-h1 {
-  border: 1px #F00 solid;
+/* line 5, assets\less\common.less */
+ul,
+ol,
+li,
+tr,
+td {
+  list-style: none;
 }
-/* line 1, assets\less\style.less */
-h1 {
-  border: 1px #F00 solid;
-}
-/* line 3, assets\less\style.less */
-h1 h2 {
-  border: 1px #F00 solid;
+/* line 6, assets\less\common.less */
+a {
+  text-decoration: none;
 }

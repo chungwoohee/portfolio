@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             'assets/css/style.css': 'assets/less/import.less'
             }
         },
-        product: {
+        dev: {
             options: {
             paths: ['assets/css'],
             dumpLineNumbers:"comments"
