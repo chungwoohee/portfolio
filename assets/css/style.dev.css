@@ -1,0 +1,20 @@
+/* line 1, assets\less\variable.less */
+h1 {
+  border: 1px #F00 solid;
+}
+/* line 1, assets\less\mixin.less */
+h1 {
+  border: 1px #F00 solid;
+}
+/* line 1, assets\less\common.less */
+h1 {
+  border: 1px #F00 solid;
+}
+/* line 1, assets\less\style.less */
+h1 {
+  border: 1px #F00 solid;
+}
+/* line 3, assets\less\style.less */
+h1 h2 {
+  border: 1px #F00 solid;
+}
