@@ -1,7 +1,18 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+@import url("//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css");
+
+@color-black:#000;
+@color-main:#2ef7b2;
+@color-white:#fff;
+@color-red:#f00;
 
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0; text-decoration: none;}
 body{font-family: 'Nanum Gothic Coding', monospace;}
 ul,ol,li,tr,td{list-style: none;}
 a{text-decoration: none;}
 
+
+span:nth-child(1){color: @color-white; background:url(image/icon/menu.svg);}
+span:nth-child(2){color: @color-red;}
+.wrap{width: 100%;}
+.header{height: 100px;}

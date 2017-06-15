@@ -1,5 +1,5 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
-/* line 3, assets\less\common.less */
+@import url("//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css");
+/* line 9, assets\less\common.less */
 body,
 html,
 h1,
@@ -17,11 +17,11 @@ p {
   padding: 0;
   text-decoration: none;
 }
-/* line 4, assets\less\common.less */
+/* line 10, assets\less\common.less */
 body {
   font-family: 'Nanum Gothic Coding', monospace;
 }
-/* line 5, assets\less\common.less */
+/* line 11, assets\less\common.less */
 ul,
 ol,
 li,
@@ -29,7 +29,24 @@ tr,
 td {
   list-style: none;
 }
-/* line 6, assets\less\common.less */
+/* line 12, assets\less\common.less */
 a {
   text-decoration: none;
+}
+/* line 14, assets\less\common.less */
+span:nth-child(1) {
+  color: #fff;
+}
+/* line 15, assets\less\common.less */
+span:nth-child(2) {
+  color: #f00;
+}
+/* line 16, assets\less\common.less */
+.wrap {
+  width: 100%;
+}
+/* line 17, assets\less\common.less */
+.header {
+  height: 100px;
+  background-color: #000;
 }
