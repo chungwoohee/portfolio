@@ -33,20 +33,20 @@ td {
 a {
   text-decoration: none;
 }
-/* line 14, assets\less\common.less */
+/* line 15, assets\less\common.less */
 span:nth-child(1) {
   color: #fff;
+  background: url(image/icon/menu.svg);
 }
-/* line 15, assets\less\common.less */
+/* line 16, assets\less\common.less */
 span:nth-child(2) {
   color: #f00;
 }
-/* line 16, assets\less\common.less */
+/* line 17, assets\less\common.less */
 .wrap {
   width: 100%;
 }
-/* line 17, assets\less\common.less */
+/* line 18, assets\less\common.less */
 .header {
   height: 100px;
-  background-color: #000;
 }
