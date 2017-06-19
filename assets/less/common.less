@@ -11,8 +11,57 @@ body{font-family: 'Nanum Gothic Coding', monospace;}
 ul,ol,li,tr,td{list-style: none;}
 a{text-decoration: none;}
 
-
-span:nth-child(1){color: @color-white; background:url(image/icon/menu.svg);}
-span:nth-child(2){color: @color-red;}
 .wrap{width: 100%;}
-.header{height: 100px;}
+
+.header{
+  height: 100px;
+  background: @color-black;
+  a{
+    padding-left: 16px;
+  }
+    .menuBtn{
+      background:url(../../image/icon/menu.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+  h1{
+    background:url(../../image/logo/whitelogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 15px;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+    .searchBtn{
+      background:url(../../image/icon/search.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+}
+
+.menu{
+  height: 50px;
+  border-top: 1px #262626 solid;
+  background: @color-black;
+  ul{
+    text-align: center;
+    line-height: 50px;
+    li{
+      display: inline-block;
+      margin-left: 90px;
+      a{
+        color: #999;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+
+//.menuBtn{background:url(../../image/icon/menu.svg) no-repeat color-white;}
+//.searchBtn{background:url(../../image/icon/search.svg) no-repeat;}

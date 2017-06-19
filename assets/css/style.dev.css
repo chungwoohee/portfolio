@@ -33,20 +33,61 @@ td {
 a {
   text-decoration: none;
 }
-/* line 15, assets\less\common.less */
-span:nth-child(1) {
-  color: #fff;
-  background: url(image/icon/menu.svg);
-}
-/* line 16, assets\less\common.less */
-span:nth-child(2) {
-  color: #f00;
-}
-/* line 17, assets\less\common.less */
+/* line 14, assets\less\common.less */
 .wrap {
   width: 100%;
 }
-/* line 18, assets\less\common.less */
+/* line 16, assets\less\common.less */
 .header {
   height: 100px;
+  background: #000;
+}
+/* line 19, assets\less\common.less */
+.header a {
+  padding-left: 16px;
+}
+/* line 22, assets\less\common.less */
+.header .menuBtn {
+  background: url(../../image/icon/menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+/* line 29, assets\less\common.less */
+.header h1 {
+  background: url(../../image/logo/whitelogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 15px;
+  width: 200px;
+  margin: 0 auto;
+}
+/* line 39, assets\less\common.less */
+.header .searchBtn {
+  background: url(../../image/icon/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+/* line 47, assets\less\common.less */
+.menu {
+  height: 50px;
+  border-top: 1px #262626 solid;
+  background: #000;
+}
+/* line 51, assets\less\common.less */
+.menu ul {
+  text-align: center;
+  line-height: 50px;
+}
+/* line 54, assets\less\common.less */
+.menu ul li {
+  display: inline-block;
+  margin-left: 90px;
+}
+/* line 57, assets\less\common.less */
+.menu ul li a {
+  color: #999;
+  font-size: 12px;
 }
