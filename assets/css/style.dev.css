@@ -52,8 +52,11 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  position: relative;
+  top: 16px;
+  left: 16px;
 }
-/* line 29, assets\less\common.less */
+/* line 32, assets\less\common.less */
 .header h1 {
   background: url(../../image/logo/whitelogo.png);
   background-repeat: no-repeat;
@@ -63,31 +66,37 @@ a {
   width: 200px;
   margin: 0 auto;
 }
-/* line 39, assets\less\common.less */
+/* line 42, assets\less\common.less */
 .header .searchBtn {
   background: url(../../image/icon/search.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  float: right;
+  position: relative;
+  top: -61px;
 }
-/* line 47, assets\less\common.less */
+/* line 56, assets\less\common.less */
 .menu {
   height: 50px;
   border-top: 1px #262626 solid;
   background: #000;
 }
-/* line 51, assets\less\common.less */
+/* line 60, assets\less\common.less */
 .menu ul {
   text-align: center;
   line-height: 50px;
 }
-/* line 54, assets\less\common.less */
+/* line 63, assets\less\common.less */
 .menu ul li {
   display: inline-block;
   margin-left: 90px;
 }
-/* line 57, assets\less\common.less */
+/* line 66, assets\less\common.less */
 .menu ul li a {
   color: #999;
-  font-size: 12px;
+  font-size: 13px;
 }
