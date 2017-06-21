@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    
+
     serve: {
         options: {
             port: 9000
@@ -37,7 +37,34 @@ module.exports = function(grunt) {
             spawn: false,
             },
         },
-    }
+    },
+    includes: {
+          files: {
+            src: ['path/to/foo.html', 'path/to/bar.html'], // Source files
+            dest: 'tmp', // Destination directory
+            flatten: true,
+            cwd: '.',
+            options: {
+              silent: true,
+              banner: '<!-- I am a banner <% includes.files.dest %> -->'
+            }
+          },
+          htmlhint: {
+      html1: {
+        options: {
+          'tag-pair': true
+        },
+        src: ['path/to/**/*.html']
+      },
+      html2: {
+        options: {
+          'tag-pair': true
+        },
+        src: ['path/to/**/*.html']
+      }
+}
+}
+
 });
 
   // Load the plugin that provides the "uglify" task.
@@ -48,4 +75,9 @@ module.exports = function(grunt) {
   // Default task(s).
   grunt.registerTask('default', ['serve']);
 
+
+  //grunt-htmlhint html 구문검사
+  grunt.loadNpmTasks('grunt-htmlhint');
+  //grunt-includes html 환경에서 인크루드를 쓸수있게 해줌
+  grunt.loadNpmTasks('grunt-includes');
 };

@@ -21,6 +21,8 @@
     "grunt-cli": "^1.2.0",
     "grunt-contrib-less": "^1.4.1",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-htmlhint": "^0.9.13",
+    "grunt-includes": "^1.0.0",
     "grunt-serve": "^0.1.6"
   }
 }
