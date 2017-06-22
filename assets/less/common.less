@@ -12,6 +12,12 @@
 @color-fontblue:#2d7dac;
 @color-skyblue:#5eb9e6;
 @color-berlinyellow:#fc0;
+@color-line:#ccc;
+@color-purple:#876cbf;
+
+
+
+
 
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0; text-decoration: none;}
 body{font-family: 'Nanum Gothic Coding', monospace;}
@@ -78,7 +84,6 @@ a{text-decoration: none;}
 }
 
 .news{
-  outline: 1px #f00 solid;
   width: 1600px;
   margin: 0 auto;
 
@@ -87,38 +92,52 @@ a{text-decoration: none;}
   }
 
   .calendar{
-    outline: 1px #000 solid;
     width: 1600px;
-    height: 340px;
+    height: 200px;
   }
 
 
   .box{
     width: 1600px;
-    height: 750px;
-    outline: 1px #00F solid;
-    //float: left;
+    height: 930px;
     margin: 0 auto;
 
     .topic{
       width: 450px;
       height: 100%;
-      background-color: @color-pink;
+      //background-color: @color-pink;
       margin: 0 auto;
       float: left;
     }
+
+    .first{
+      outline: 1px @color-line solid;
+    }
+
     .second{
       margin: 0 125px;
+      outline: 1px @color-line solid;
+    }
+
+    .article{
+      width: 450px;
+      height: 450px;
+      margin-top: 30px;
     }
 
     .img{
       width: 450px;
       height: 450px;
-      outline: 1px #f00 solid;
     }
 
     img{
       width: 100%;
+    }
+
+    .third>div{
+      outline: 1px @color-line solid;
+      width: 450px;
+      height: 450px;
     }
 
 
