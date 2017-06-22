@@ -58,16 +58,70 @@ a{text-decoration: none;}
   background: @color-black;
   ul{
     margin: 0 auto;
-    width: 1200px;
+    width: 1600px;
     text-align: center;
     line-height: 50px;
     li{
       display: inline-block;
-      margin: 0 50px;
+      margin: 0 80px;
       a{
         color: #999;
         font-size: 13px;
       }
     }
   }
+}
+
+.contents{
+  height: 650px;
+  background-color: #f2f2f2;
+}
+
+.news{
+  outline: 1px #f00 solid;
+  width: 1600px;
+  margin: 0 auto;
+
+  h1{
+    text-transform: uppercase;
+  }
+
+  .calendar{
+    outline: 1px #000 solid;
+    width: 1600px;
+    height: 340px;
+  }
+
+
+  .box{
+    width: 1600px;
+    height: 750px;
+    outline: 1px #00F solid;
+    //float: left;
+    margin: 0 auto;
+
+    .topic{
+      width: 450px;
+      height: 100%;
+      background-color: @color-pink;
+      margin: 0 auto;
+      float: left;
+    }
+    .second{
+      margin: 0 125px;
+    }
+
+    .img{
+      width: 450px;
+      height: 450px;
+      outline: 1px #f00 solid;
+    }
+
+    img{
+      width: 100%;
+    }
+
+
+  } //box close
+
 }
