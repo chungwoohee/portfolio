@@ -50,10 +50,6 @@
   text-align: center;
   font-size: 20px;
 }
-/* line 56, assets\less\variable.less */
-.box .rental {
-  margin-top: 30px;
-}
 /* line 22, assets\less\common.less */
 body,
 html,
@@ -91,21 +87,26 @@ a {
 /* line 27, assets\less\common.less */
 .wrap {
   width: 100%;
+  height: 2900px;
 }
-/* line 29, assets\less\common.less */
-.header {
+/* line 31, assets\less\common.less */
+.wrap h1 {
+  font-family: 'Noto Sans', sans-serif;
+}
+/* line 34, assets\less\common.less */
+.wrap .gnb .header {
   height: 100px;
   background: #000;
   border-bottom: 1px #262626 solid;
 }
-/* line 34, assets\less\common.less */
-.header .menuBtn {
+/* line 39, assets\less\common.less */
+.wrap .gnb .header .menuBtn {
   position: relative;
   top: 19px;
   left: 19px;
 }
-/* line 40, assets\less\common.less */
-.header h1 {
+/* line 45, assets\less\common.less */
+.wrap .gnb .header h1 {
   font-family: 'Cinzel', serif;
   color: #999;
   text-transform: uppercase;
@@ -115,98 +116,150 @@ a {
   margin: 0 auto;
   letter-spacing: 0.18em;
 }
-/* line 49, assets\less\common.less */
-.header h1 a {
+/* line 54, assets\less\common.less */
+.wrap .gnb .header h1 a {
   color: #fff;
 }
-/* line 54, assets\less\common.less */
-.header .searchBtn {
+/* line 59, assets\less\common.less */
+.wrap .gnb .header .searchBtn {
   float: right;
   position: relative;
   top: -45px;
   right: 19px;
 }
-/* line 62, assets\less\common.less */
-.menu {
+/* line 67, assets\less\common.less */
+.wrap .gnb .menu {
   height: 50px;
   background: #000;
 }
-/* line 65, assets\less\common.less */
-.menu ul {
+/* line 70, assets\less\common.less */
+.wrap .gnb .menu ul {
   margin: 0 auto;
   width: 1600px;
   text-align: center;
   line-height: 50px;
 }
-/* line 70, assets\less\common.less */
-.menu ul li {
+/* line 75, assets\less\common.less */
+.wrap .gnb .menu ul li {
   display: inline-block;
   margin: 0 80px;
 }
-/* line 73, assets\less\common.less */
-.menu ul li a {
-  color: #999;
-  font-size: 13px;
+/* line 78, assets\less\common.less */
+.wrap .gnb .menu ul li .en {
+  letter-spacing: 0.18em;
 }
 /* line 81, assets\less\common.less */
-.contents {
+.wrap .gnb .menu ul li a {
+  color: #999;
+  font-size: 14px;
+}
+/* line 92, assets\less\common.less */
+.wrap .contents section .h1 {
+  border: 1px #Ff0 solid;
+  font-size: 38px;
+  display: inline-block;
+}
+/* line 98, assets\less\common.less */
+.wrap .contents .main {
   height: 650px;
   background-color: #f2f2f2;
 }
-/* line 86, assets\less\common.less */
-.news {
+/* line 103, assets\less\common.less */
+.wrap .contents .news {
   width: 1600px;
   margin: 0 auto;
 }
-/* line 90, assets\less\common.less */
-.news h1 {
+/* line 107, assets\less\common.less */
+.wrap .contents .news h1 {
   text-transform: uppercase;
+  margin-top: 50px;
+  letter-spacing: 0.1em;
 }
-/* line 94, assets\less\common.less */
-.news .calendar {
+/* line 113, assets\less\common.less */
+.wrap .contents .news .calendar {
   width: 1600px;
   height: 200px;
+  outline: 1px #ccc solid;
+  margin-bottom: 50px;
 }
-/* line 100, assets\less\common.less */
-.news .box {
+/* line 120, assets\less\common.less */
+.wrap .contents .news .box {
   width: 1600px;
   height: 930px;
   margin: 0 auto;
 }
-/* line 105, assets\less\common.less */
-.news .box .topic {
+/* line 125, assets\less\common.less */
+.wrap .contents .news .box .paragraph {
+  border: 1px #f00 solid;
+  margin: 20px;
+}
+/* line 129, assets\less\common.less */
+.wrap .contents .news .box .paragraph h1 {
+  border: 1px #f0f solid;
+}
+/* line 133, assets\less\common.less */
+.wrap .contents .news .box .topic {
   width: 450px;
   height: 100%;
   margin: 0 auto;
   float: left;
+  display: grid;
 }
-/* line 113, assets\less\common.less */
-.news .box .first {
+/* line 141, assets\less\common.less */
+.wrap .contents .news .box .first {
   outline: 1px #ccc solid;
 }
-/* line 117, assets\less\common.less */
-.news .box .second {
+/* line 143, assets\less\common.less */
+.wrap .contents .news .box .first h1 {
+  font-family: 'Cinzel', serif;
+  margin: 0;
+}
+/* line 146, assets\less\common.less */
+.wrap .contents .news .box .second {
   margin: 0 125px;
   outline: 1px #ccc solid;
 }
-/* line 122, assets\less\common.less */
-.news .box .article {
+/* line 149, assets\less\common.less */
+.wrap .contents .news .box .second h1 {
+  font-family: 'Cinzel', serif;
+  margin: 0;
+}
+/* line 152, assets\less\common.less */
+.wrap .contents .news .box .article {
+  width: 450px;
+  height: 460px;
+}
+/* line 157, assets\less\common.less */
+.wrap .contents .news .box .article > span {
+  border: 1px #00f solid;
+  margin-left: 20px;
+}
+/* line 162, assets\less\common.less */
+.wrap .contents .news .box .img {
   width: 450px;
   height: 450px;
-  margin-top: 30px;
 }
-/* line 128, assets\less\common.less */
-.news .box .img {
-  width: 450px;
-  height: 450px;
-}
-/* line 133, assets\less\common.less */
-.news .box img {
+/* line 167, assets\less\common.less */
+.wrap .contents .news .box img {
   width: 100%;
 }
-/* line 137, assets\less\common.less */
-.news .box .third > div {
+/* line 172, assets\less\common.less */
+.wrap .contents .news .box .third h1 {
+  margin: 0;
+}
+/* line 173, assets\less\common.less */
+.wrap .contents .news .box .third .rental {
+  margin-top: 30px;
+}
+/* line 178, assets\less\common.less */
+.wrap .contents .news .box .third > div {
   outline: 1px #ccc solid;
   width: 450px;
   height: 450px;
+}
+/* line 187, assets\less\common.less */
+.wrap .contents .sns {
+  border: 1px #f00 solid;
+  height: 400px;
+  float: left;
 }
