@@ -5,7 +5,6 @@
     background-size: cover;
     margin: 0 auto;
 
-
     .title{
       width: 600px;
       height: 350px;
@@ -31,6 +30,8 @@
       line-height: 51px;
       text-align: center;
       font-size: 20px;
+      border: 1px #000 solid;
+      border-radius: 2px;
     }
   } //main close
 
@@ -45,16 +46,49 @@
       height: 60px;
       color: @color-white;
       background-color: @color-black;
+      border-radius: 3px;
       line-height: 51px;
       text-align: center;
       font-size: 20px;
     }
 
+    .rental .paragraph .Btn span{
+      width: 120px;
+      float: left;
+    }
+
+    .rent span{
+      border: 1px @color-main solid;
+      color: @color-main;
+      background-color: @color-white;
+
+    }
+
+    .hall span{
+      background-color: @color-main;
+      color: @color-fonthover;
+      margin-left: 10px;
+    }
+
   } //news close
-
-
-
 
   section.sns{
     .blogimg{}
+  }
+
+  section.video{
+    .Btn span{
+      display: inline-block;
+      width: 240px;
+      height: 60px;
+      color: #000;
+      border: 1px #000 solid;
+      border-radius: 3px;
+      line-height: 51px;
+      text-align: center;
+      font-size: 20px;
+      position: relative;
+      top: -100px;
+      left: 1314px;
+    }
   }

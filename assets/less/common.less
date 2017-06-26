@@ -9,13 +9,14 @@
 @color-red:#f00;
 @color-babypink:#fbe1e8;
 @color-pink:#f78297;
+@color-strawberry:#f49ac1;
 @color-fontblue:#2d7dac;
 @color-skyblue:#5eb9e6;
 @color-berlinyellow:#fc0;
 @color-line:#ccc;
 @color-purple:#876cbf;
 @color-darkgold:#997d3f;
-
+@color-fonthover:#146348;
 
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0; text-decoration: none;}
 body{font-family: 'Nanum Gothic Coding', monospace;}
@@ -24,7 +25,21 @@ a{text-decoration: none;}
 
 .wrap{
   width: 100%;
-  height: 2900px;
+  height: 4000px;
+
+  .logo{
+      font-family: 'Cinzel',serif;
+      color: @color-white;
+      text-transform: uppercase;
+      font-weight: lighter;
+      display: block;
+      width: 124px;
+      margin: 0 auto;
+      letter-spacing: 0.18em;
+      a{
+        color: @color-white
+      }
+  }
 
   h1{font-family: 'Noto Sans', sans-serif;}
 
@@ -40,26 +55,12 @@ a{text-decoration: none;}
         left: 19px;
       }
 
-        h1{
-          font-family: 'Cinzel',serif;
-          color: #999;
-          text-transform: uppercase;
-          font-weight: lighter;
-          display: block;
-          width: 124px;
-          margin: 0 auto;
-          letter-spacing: 0.18em;
-          a{
-            color: @color-white
-          }
-        }
-
-        .searchBtn{
+      .searchBtn{
           float: right;
           position: relative;
           top: -45px;
           right: 19px;
-        }
+      }
     } //header close
 
   .menu{
@@ -123,6 +124,7 @@ a{text-decoration: none;}
           margin: 20px;
 
           h1{border: 1px #f0f solid;
+            letter-spacing: 0.09em;
           }
         }
 
@@ -153,6 +155,9 @@ a{text-decoration: none;}
         .article>span{
           border: 1px #00f solid;
           margin-left: 20px;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 600;
         }
 
         .img{
@@ -182,12 +187,10 @@ a{text-decoration: none;}
 
     section.sns{
       width: 100%;
-      float: left;
       margin-top: 50px;
-
       .social{
         width: 1600px;
-        height: 700px;
+        height: 474px;
         margin: 0 auto;
 
           li{
@@ -202,44 +205,103 @@ a{text-decoration: none;}
               }
 
               .blogimg{
-                background-color: @color-pink;
+                background-color: @color-strawberry;
                 outline: 1px @color-line solid;
                 height: 400px;
               }
 
+              .snsimg{
+                outline: 1px #00F solid;
+              }
+
+              .snsimg ul>li{
+                outline: 1px #000 solid;
+                width: 197.5px;
+                height: 200px;
+              }
+
           }
-
-
-
-
-
-
-
-
-
 
         .media{
           margin-left: 20px;
         }
 
-
-
       } //social
     } //section.sns close
 
+    section.video{
+      outline: 1px #f0f solid;
+      margin: 0 auto;
+      margin-top: 50px;
 
+      .videoimg{
+        width: 1600px;
+        margin: 0 auto;
+        height: 200px;
 
+        img{width: 100%; height: 100%;}
+      } //videoimg close
 
+      .videoaline{
+        width: 1600px;
+        margin: 0 auto;
 
+        a>img{
+          width: 40px;
+          height: 50px;
+          float: right;
+        }
+      }
 
-
-
-
-
-
-
-
-
+    } //section.video close
   } //contents close
+
+  .footer{
+    height: 600px;
+    background: @color-black;
+    margin-top: 50px;
+
+    .footerwrap{
+      width: 1600px;
+      height: 100%;
+      margin: 0 auto;
+
+      .container>div{
+        width: 250px;
+        height: 73px;
+        outline: 1px #f00 solid;
+        float: left;
+        margin-top: 70px;
+
+        img{
+        border: 1px #00f solid;
+        width: 70px;}
+      }
+
+      .container a{
+        font-family: 'Cinzel',serif;
+        display: block;
+        color: @color-white;
+        font-size: 25px;
+      }
+
+      .container .physical{
+        width: 356px;
+      }
+
+      .piscis .info{
+        color: #999;
+        font-size: 11px;
+      }
+
+
+    } //footerwrap close
+  } //footer close
+
+
+
+
+
+
 
 } //wrap close
