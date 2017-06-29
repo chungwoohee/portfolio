@@ -265,43 +265,45 @@ a{text-decoration: none;}
   } //contents close
 
   .footer{
-    height: 600px;
+    height: 250px;
     background: @color-black;
     margin-top: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    border: 1px #f00 solid;
 
     .footerwrap{
       width: 1600px;
       height: 100%;
+      border: 1px #f00 solid;
       margin: 0 auto;
 
       .container>div{
-        width: 250px;
+        width: 240px;
         height: 73px;
         outline: 1px #f00 solid;
         float: left;
         margin-top: 70px;
-
-        img{
-        border: 1px #00f solid;
-        width: 70px;}
       }
 
-      .container a{
-        font-family: 'Cinzel',serif;
+      .container {
+
+        span{
         display: block;
         color: @color-white;
-        font-size: 25px;
-      }
-
-      .container .physical{
-        width: 356px;
-      }
-
-      .piscis .info{
-        color: #999;
+        text-transform: uppercase;
         font-size: 11px;
+        margin: 0;
+        padding: 0;
+        border: 1px #f00 solid;
       }
 
+      .email{
+        padding: 20px;
+        font-size: .65em;
+        border: 1px @color-white solid;
+        a{color: @color-white;}
+      }
+      }
 
     } //footerwrap close
   } //footer close

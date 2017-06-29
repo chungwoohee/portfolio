@@ -374,42 +374,44 @@ a {
 }
 /* line 267, assets\less\common.less */
 .wrap .footer {
-  height: 600px;
+  height: 250px;
   background: #000;
   margin-top: 50px;
+  font-family: 'Noto Sans', sans-serif;
+  border: 1px #f00 solid;
 }
-/* line 272, assets\less\common.less */
+/* line 274, assets\less\common.less */
 .wrap .footer .footerwrap {
   width: 1600px;
   height: 100%;
+  border: 1px #f00 solid;
   margin: 0 auto;
 }
-/* line 277, assets\less\common.less */
+/* line 280, assets\less\common.less */
 .wrap .footer .footerwrap .container > div {
-  width: 250px;
+  width: 240px;
   height: 73px;
   outline: 1px #f00 solid;
   float: left;
   margin-top: 70px;
 }
-/* line 284, assets\less\common.less */
-.wrap .footer .footerwrap .container > div img {
-  border: 1px #00f solid;
-  width: 70px;
-}
-/* line 289, assets\less\common.less */
-.wrap .footer .footerwrap .container a {
-  font-family: 'Cinzel', serif;
+/* line 290, assets\less\common.less */
+.wrap .footer .footerwrap .container span {
   display: block;
   color: #fff;
-  font-size: 25px;
-}
-/* line 296, assets\less\common.less */
-.wrap .footer .footerwrap .container .physical {
-  width: 356px;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  border: 1px #f00 solid;
 }
 /* line 300, assets\less\common.less */
-.wrap .footer .footerwrap .piscis .info {
-  color: #999;
-  font-size: 11px;
+.wrap .footer .footerwrap .container .email {
+  padding: 20px;
+  font-size: .65em;
+  border: 1px #fff solid;
+}
+/* line 304, assets\less\common.less */
+.wrap .footer .footerwrap .container .email a {
+  color: #fff;
 }
