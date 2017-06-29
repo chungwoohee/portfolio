@@ -376,42 +376,90 @@ a {
 .wrap .footer {
   height: 250px;
   background: #000;
-  margin-top: 50px;
+  margin-top: 200px;
   font-family: 'Noto Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
   border: 1px #f00 solid;
 }
-/* line 274, assets\less\common.less */
+/* line 276, assets\less\common.less */
 .wrap .footer .footerwrap {
   width: 1600px;
   height: 100%;
   border: 1px #f00 solid;
   margin: 0 auto;
 }
-/* line 280, assets\less\common.less */
+/* line 282, assets\less\common.less */
 .wrap .footer .footerwrap .container > div {
   width: 240px;
   height: 73px;
   outline: 1px #f00 solid;
   float: left;
-  margin-top: 70px;
+  margin-top: 20px;
+  margin: 45px 15px 0 0;
+  line-height: 20px;
 }
-/* line 290, assets\less\common.less */
+/* line 292, assets\less\common.less */
+.wrap .footer .footerwrap .container p {
+  color: #999;
+  font-size: 9px;
+}
+/* line 299, assets\less\common.less */
+.wrap .footer .footerwrap .container .info {
+  width: 349px;
+}
+/* line 301, assets\less\common.less */
 .wrap .footer .footerwrap .container span {
-  display: block;
+  display: inline-block;
   color: #fff;
   text-transform: uppercase;
-  font-size: 11px;
-  margin: 0;
-  padding: 0;
-  border: 1px #f00 solid;
+  font-weight: normal;
 }
-/* line 300, assets\less\common.less */
+/* line 308, assets\less\common.less */
+.wrap .footer .footerwrap .container .name {
+  color: #fff;
+}
+/* line 312, assets\less\common.less */
+.wrap .footer .footerwrap .container .pis {
+  padding-right: 5px;
+  border-right: 1px #ccc solid;
+  line-height: 8px;
+}
+/* line 317, assets\less\common.less */
+.wrap .footer .footerwrap .container .master {
+  font-size: 10px;
+}
+/* line 318, assets\less\common.less */
+.wrap .footer .footerwrap .container .local {
+  line-height: 11px;
+  margin-top: 10px;
+}
+/* line 319, assets\less\common.less */
+.wrap .footer .footerwrap .container .num {
+  line-height: 11px;
+  margin-top: 30px;
+}
+/* line 320, assets\less\common.less */
 .wrap .footer .footerwrap .container .email {
-  padding: 20px;
+  padding: 14px;
   font-size: .65em;
+  width: 129px;
+  text-align: center;
   border: 1px #fff solid;
 }
-/* line 304, assets\less\common.less */
+/* line 326, assets\less\common.less */
 .wrap .footer .footerwrap .container .email a {
   color: #fff;
+}
+/* line 329, assets\less\common.less */
+.wrap .footer .footerwrap .container .fallow .snsBtngroup {
+  margin-top: 26px;
+}
+/* line 331, assets\less\common.less */
+.wrap .footer .footerwrap .container .fallow .snsBtngroup a {
+  margin: 0 10px 0 0;
+}
+/* line 332, assets\less\common.less */
+.wrap .footer .footerwrap .container .fallow .snsBtngroup a svg {
+  width: 25px;
 }

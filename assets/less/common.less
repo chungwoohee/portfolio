@@ -267,8 +267,10 @@ a{text-decoration: none;}
   .footer{
     height: 250px;
     background: @color-black;
-    margin-top: 50px;
+    margin-top: 200px;
     font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
     border: 1px #f00 solid;
 
     .footerwrap{
@@ -282,30 +284,58 @@ a{text-decoration: none;}
         height: 73px;
         outline: 1px #f00 solid;
         float: left;
-        margin-top: 70px;
+        margin-top: 20px;
+        margin: 45px 15px 0 0;
+        line-height: 20px;
+      }
+
+      .container p{
+        color: #999;
+        font-size: 9px;
       }
 
       .container {
 
+        .info{width: 349px;}
+
         span{
-        display: block;
+        display: inline-block;
         color: @color-white;
         text-transform: uppercase;
-        font-size: 11px;
-        margin: 0;
-        padding: 0;
-        border: 1px #f00 solid;
+        font-weight: normal;
       }
 
-      .email{
-        padding: 20px;
-        font-size: .65em;
-        border: 1px @color-white solid;
-        a{color: @color-white;}
+        .name{
+        color: @color-white;
       }
+
+        .pis{
+        padding-right: 5px;
+        border-right: 1px @color-line solid;
+        line-height: 8px;}
+
+        .master{font-size: 10px;}
+        .local{line-height: 11px; margin-top: 10px;}
+        .num{line-height: 11px; margin-top: 30px;}
+        .email{
+          padding: 14px;
+          font-size: .65em;
+          width: 129px;
+          text-align: center;
+          border: 1px @color-white solid;
+            a{color: @color-white;}
+        }
+
+      .fallow .snsBtngroup{
+        margin-top: 26px;
+        a{margin: 0 10px 0 0;
+          svg{width: 25px;}
+        }
       }
+      } // container close
 
     } //footerwrap close
+
   } //footer close
 
 
