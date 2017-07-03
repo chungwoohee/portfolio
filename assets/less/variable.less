@@ -4,22 +4,46 @@
     background: url(../../image/pic/main.png);
     background-size: cover;
     margin: 0 auto;
+    position: relative;
+    &:hover::after{
+      opacity:0.5;
+    }
+    &::after{
+      content: "";
+      background-color: #000;
+      position: absolute;
+      z-index: 10;
+      left: 0;
+      top: 0;
+      right: 0;
+      display: block;
+      opacity: 0;
+      transition: 1s;
+      bottom: 0;
+    }
 
     .title{
-      width: 600px;
-      height: 350px;
-      border: 1px #00f solid;
+      width: 1600px;
+      position: absolute;
+      top: 33%;
+
+      .workshopTitle{
+        position: relative;
+        text-align: center;
+        z-index: 999;}
 
       h1{
-        color: @color-purple;
-        font-size: 60px;
+        color: @color-white;
+        font-size: 70px;
+        display: inline-block;
       }
     }
 
     span{
-      border: 1px #f00 solid;
       display: block;
-      color: @color-white;
+      color: #fff;
+      font-size: 25px;
+      line-height: 30px;
     }
 
     .Btn span{
@@ -32,6 +56,10 @@
       font-size: 20px;
       border: 1px #000 solid;
       border-radius: 2px;
+      margin: 0 auto;
+      margin-top: 20px;
+      position: relative;
+      z-index: 999;
     }
   } //main close
 

@@ -8,25 +8,52 @@
   background: url(../../image/pic/main.png);
   background-size: cover;
   margin: 0 auto;
+  position: relative;
 }
 /* line 8, assets\less\variable.less */
-.main .title {
-  width: 600px;
-  height: 350px;
-  border: 1px #00f solid;
+.main:hover::after {
+  opacity: 0.5;
 }
-/* line 13, assets\less\variable.less */
-.main .title h1 {
-  color: #876cbf;
-  font-size: 60px;
-}
-/* line 19, assets\less\variable.less */
-.main span {
-  border: 1px #f00 solid;
+/* line 11, assets\less\variable.less */
+.main::after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  right: 0;
   display: block;
-  color: #fff;
+  opacity: 0;
+  transition: 1s;
+  bottom: 0;
 }
 /* line 25, assets\less\variable.less */
+.main .title {
+  width: 1600px;
+  position: absolute;
+  top: 33%;
+}
+/* line 30, assets\less\variable.less */
+.main .title .workshopTitle {
+  position: relative;
+  text-align: center;
+  z-index: 999;
+}
+/* line 35, assets\less\variable.less */
+.main .title h1 {
+  color: #fff;
+  font-size: 70px;
+  display: inline-block;
+}
+/* line 42, assets\less\variable.less */
+.main span {
+  display: block;
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+}
+/* line 49, assets\less\variable.less */
 .main .Btn span {
   width: 240px;
   height: 60px;
@@ -37,12 +64,16 @@
   font-size: 20px;
   border: 1px #000 solid;
   border-radius: 2px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  z-index: 999;
 }
-/* line 40, assets\less\variable.less */
+/* line 68, assets\less\variable.less */
 .news span {
   display: block;
 }
-/* line 44, assets\less\variable.less */
+/* line 72, assets\less\variable.less */
 .news .Btn span {
   width: 240px;
   height: 60px;
@@ -53,24 +84,24 @@
   text-align: center;
   font-size: 20px;
 }
-/* line 55, assets\less\variable.less */
+/* line 83, assets\less\variable.less */
 .news .rental .paragraph .Btn span {
   width: 120px;
   float: left;
 }
-/* line 60, assets\less\variable.less */
+/* line 88, assets\less\variable.less */
 .news .rent span {
   border: 1px #2ef7b2 solid;
   color: #2ef7b2;
   background-color: #fff;
 }
-/* line 67, assets\less\variable.less */
+/* line 95, assets\less\variable.less */
 .news .hall span {
   background-color: #2ef7b2;
   color: #146348;
   margin-left: 10px;
 }
-/* line 80, assets\less\variable.less */
+/* line 108, assets\less\variable.less */
 section.video .Btn span {
   display: inline-block;
   width: 240px;
@@ -122,7 +153,7 @@ a {
 /* line 27, assets\less\common.less */
 .wrap {
   width: 100%;
-  height: 4000px;
+  height: 3483px;
 }
 /* line 31, assets\less\common.less */
 .wrap .logo {
@@ -176,19 +207,35 @@ a {
 }
 /* line 75, assets\less\common.less */
 .wrap .gnb .menu ul li {
-  display: inline-block;
-  margin: 0 80px;
+  display: block;
+  float: left;
+  width: 200px;
 }
-/* line 78, assets\less\common.less */
+/* line 79, assets\less\common.less */
 .wrap .gnb .menu ul li .en {
   letter-spacing: 0.18em;
 }
-/* line 81, assets\less\common.less */
+/* line 82, assets\less\common.less */
 .wrap .gnb .menu ul li a {
   color: #999;
   font-size: 14px;
 }
-/* line 92, assets\less\common.less */
+/* line 89, assets\less\common.less */
+.wrap .gnb .menu ul > li > ul {
+  width: 100%;
+  z-index: 999;
+  position: relative;
+}
+/* line 95, assets\less\common.less */
+.wrap .gnb .menu ul > li > ul li {
+  padding-top: 10px;
+  line-height: 35px;
+}
+/* line 96, assets\less\common.less */
+.wrap .gnb .menu ul > li > ul li > a {
+  font-size: 13px;
+}
+/* line 103, assets\less\common.less */
 .wrap .contents section .h1 {
   border: 1px #Ff0 solid;
   font-size: 38px;
@@ -197,41 +244,41 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-/* line 101, assets\less\common.less */
+/* line 112, assets\less\common.less */
 .wrap .contents section.main {
   height: 650px;
   background-color: #f2f2f2;
 }
-/* line 106, assets\less\common.less */
+/* line 117, assets\less\common.less */
 .wrap .contents section.news {
   width: 1600px;
   margin: 0 auto;
   margin-top: 50px;
 }
-/* line 111, assets\less\common.less */
+/* line 122, assets\less\common.less */
 .wrap .contents section.news .calendar {
   width: 1600px;
   height: 200px;
   outline: 1px #ccc solid;
   margin-bottom: 50px;
 }
-/* line 118, assets\less\common.less */
+/* line 129, assets\less\common.less */
 .wrap .contents section.news .box {
   width: 1600px;
   height: 930px;
   margin: 0 auto;
 }
-/* line 123, assets\less\common.less */
+/* line 134, assets\less\common.less */
 .wrap .contents section.news .box .paragraph {
   border: 1px #f00 solid;
   margin: 20px;
 }
-/* line 127, assets\less\common.less */
+/* line 138, assets\less\common.less */
 .wrap .contents section.news .box .paragraph h1 {
   border: 1px #f0f solid;
   letter-spacing: 0.09em;
 }
-/* line 132, assets\less\common.less */
+/* line 143, assets\less\common.less */
 .wrap .contents section.news .box .topic {
   width: 450px;
   height: 100%;
@@ -239,31 +286,31 @@ a {
   float: left;
   display: grid;
 }
-/* line 140, assets\less\common.less */
+/* line 151, assets\less\common.less */
 .wrap .contents section.news .box .first {
   outline: 1px #ccc solid;
 }
-/* line 142, assets\less\common.less */
+/* line 153, assets\less\common.less */
 .wrap .contents section.news .box .first h1 {
   font-family: 'Cinzel', serif;
   margin: 0;
 }
-/* line 145, assets\less\common.less */
+/* line 156, assets\less\common.less */
 .wrap .contents section.news .box .second {
   margin: 0 125px;
   outline: 1px #ccc solid;
 }
-/* line 148, assets\less\common.less */
+/* line 159, assets\less\common.less */
 .wrap .contents section.news .box .second h1 {
   font-family: 'Cinzel', serif;
   margin: 0;
 }
-/* line 151, assets\less\common.less */
+/* line 162, assets\less\common.less */
 .wrap .contents section.news .box .article {
   width: 450px;
   height: 460px;
 }
-/* line 156, assets\less\common.less */
+/* line 167, assets\less\common.less */
 .wrap .contents section.news .box .article > span {
   border: 1px #00f solid;
   margin-left: 20px;
@@ -271,110 +318,110 @@ a {
   font-size: 12px;
   font-weight: 600;
 }
-/* line 164, assets\less\common.less */
+/* line 175, assets\less\common.less */
 .wrap .contents section.news .box .img {
   width: 450px;
   height: 450px;
 }
-/* line 169, assets\less\common.less */
+/* line 180, assets\less\common.less */
 .wrap .contents section.news .box img {
   width: 100%;
 }
-/* line 174, assets\less\common.less */
+/* line 185, assets\less\common.less */
 .wrap .contents section.news .box .third h1 {
   margin: 0;
 }
-/* line 175, assets\less\common.less */
+/* line 186, assets\less\common.less */
 .wrap .contents section.news .box .third .rental {
   margin-top: 30px;
 }
-/* line 180, assets\less\common.less */
+/* line 191, assets\less\common.less */
 .wrap .contents section.news .box .third > div {
   outline: 1px #ccc solid;
   width: 450px;
   height: 450px;
 }
-/* line 186, assets\less\common.less */
+/* line 197, assets\less\common.less */
 .wrap .contents section.news .box .third .paragraph .infotitle {
   border: 1px #00f solid;
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 20px;
 }
-/* line 196, assets\less\common.less */
+/* line 207, assets\less\common.less */
 .wrap .contents section.sns {
   width: 100%;
   margin-top: 50px;
 }
-/* line 199, assets\less\common.less */
+/* line 210, assets\less\common.less */
 .wrap .contents section.sns .social {
   width: 1600px;
   height: 474px;
   margin: 0 auto;
 }
-/* line 204, assets\less\common.less */
+/* line 215, assets\less\common.less */
 .wrap .contents section.sns .social li {
   float: left;
   width: 790px;
   height: 474px;
 }
-/* line 209, assets\less\common.less */
+/* line 220, assets\less\common.less */
 .wrap .contents section.sns .social li a > img {
   width: 40px;
   height: 50px;
   float: right;
 }
-/* line 215, assets\less\common.less */
+/* line 226, assets\less\common.less */
 .wrap .contents section.sns .social li .blogimg {
   background-color: #f49ac1;
   outline: 1px #ccc solid;
   height: 400px;
 }
-/* line 221, assets\less\common.less */
+/* line 232, assets\less\common.less */
 .wrap .contents section.sns .social li .snsimg {
   outline: 1px #00F solid;
 }
-/* line 225, assets\less\common.less */
+/* line 236, assets\less\common.less */
 .wrap .contents section.sns .social li .snsimg ul > li {
   outline: 1px #000 solid;
   width: 197.5px;
   height: 200px;
 }
-/* line 233, assets\less\common.less */
+/* line 244, assets\less\common.less */
 .wrap .contents section.sns .social .media {
   margin-left: 20px;
 }
-/* line 240, assets\less\common.less */
+/* line 251, assets\less\common.less */
 .wrap .contents section.video {
   outline: 1px #f0f solid;
   margin: 0 auto;
   margin-top: 50px;
 }
-/* line 245, assets\less\common.less */
+/* line 256, assets\less\common.less */
 .wrap .contents section.video .videoimg {
   width: 1600px;
   margin: 0 auto;
   height: 200px;
 }
-/* line 250, assets\less\common.less */
+/* line 261, assets\less\common.less */
 .wrap .contents section.video .videoimg img {
   width: 100%;
   height: 100%;
 }
-/* line 253, assets\less\common.less */
+/* line 264, assets\less\common.less */
 .wrap .contents section.video .videoaline {
   width: 1600px;
   margin: 0 auto;
 }
-/* line 257, assets\less\common.less */
+/* line 268, assets\less\common.less */
 .wrap .contents section.video .videoaline a > img {
   width: 40px;
   height: 50px;
   float: right;
 }
-/* line 267, assets\less\common.less */
+/* line 278, assets\less\common.less */
 .wrap .footer {
-  height: 250px;
+  height: 329px;
   background: #000;
   margin-top: 200px;
   font-family: 'Noto Sans', sans-serif;
@@ -382,64 +429,65 @@ a {
   font-size: 11px;
   border: 1px #f00 solid;
 }
-/* line 276, assets\less\common.less */
+/* line 287, assets\less\common.less */
 .wrap .footer .footerwrap {
-  width: 1600px;
-  height: 100%;
-  border: 1px #f00 solid;
-  margin: 0 auto;
+  height: 176px;
 }
-/* line 282, assets\less\common.less */
+/* line 290, assets\less\common.less */
 .wrap .footer .footerwrap .container > div {
   width: 240px;
   height: 73px;
-  outline: 1px #f00 solid;
   float: left;
   margin-top: 20px;
   margin: 45px 15px 0 0;
   line-height: 20px;
 }
-/* line 292, assets\less\common.less */
+/* line 300, assets\less\common.less */
 .wrap .footer .footerwrap .container p {
-  color: #999;
+  color: #757474;
   font-size: 9px;
 }
-/* line 299, assets\less\common.less */
+/* line 305, assets\less\common.less */
+.wrap .footer .footerwrap .container {
+  width: 1600px;
+  margin: 0 auto;
+}
+/* line 309, assets\less\common.less */
 .wrap .footer .footerwrap .container .info {
   width: 349px;
 }
-/* line 301, assets\less\common.less */
+/* line 311, assets\less\common.less */
 .wrap .footer .footerwrap .container span {
   display: inline-block;
   color: #fff;
   text-transform: uppercase;
   font-weight: normal;
 }
-/* line 308, assets\less\common.less */
+/* line 318, assets\less\common.less */
 .wrap .footer .footerwrap .container .name {
   color: #fff;
 }
-/* line 312, assets\less\common.less */
+/* line 320, assets\less\common.less */
 .wrap .footer .footerwrap .container .pis {
   padding-right: 5px;
   border-right: 1px #ccc solid;
   line-height: 8px;
 }
-/* line 317, assets\less\common.less */
+/* line 321, assets\less\common.less */
 .wrap .footer .footerwrap .container .master {
   font-size: 10px;
 }
-/* line 318, assets\less\common.less */
+/* line 322, assets\less\common.less */
 .wrap .footer .footerwrap .container .local {
   line-height: 11px;
   margin-top: 10px;
 }
-/* line 319, assets\less\common.less */
+/* line 323, assets\less\common.less */
 .wrap .footer .footerwrap .container .num {
   line-height: 11px;
   margin-top: 30px;
 }
-/* line 320, assets\less\common.less */
+/* line 324, assets\less\common.less */
 .wrap .footer .footerwrap .container .email {
   padding: 14px;
   font-size: .65em;
@@ -447,19 +495,62 @@ a {
   text-align: center;
   border: 1px #fff solid;
 }
-/* line 326, assets\less\common.less */
+/* line 330, assets\less\common.less */
 .wrap .footer .footerwrap .container .email a {
   color: #fff;
 }
-/* line 329, assets\less\common.less */
+/* line 333, assets\less\common.less */
 .wrap .footer .footerwrap .container .fallow .snsBtngroup {
   margin-top: 26px;
 }
-/* line 331, assets\less\common.less */
+/* line 335, assets\less\common.less */
 .wrap .footer .footerwrap .container .fallow .snsBtngroup a {
   margin: 0 10px 0 0;
 }
-/* line 332, assets\less\common.less */
+/* line 336, assets\less\common.less */
 .wrap .footer .footerwrap .container .fallow .snsBtngroup a svg {
   width: 25px;
+}
+/* line 344, assets\less\common.less */
+.wrap .footer .footerend .notice {
+  width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+}
+/* line 348, assets\less\common.less */
+.wrap .footer .footerend .notice span {
+  display: block;
+  color: #fff;
+  font-size: 10px;
+  color: #757474;
+}
+/* line 356, assets\less\common.less */
+.wrap .footer .footerend .end {
+  border-top: 1px #262626 solid;
+}
+/* line 359, assets\less\common.less */
+.wrap .footer .footerend .end ul {
+  width: 1600px;
+  margin: 0 auto;
+  height: 80px;
+  line-height: 80px;
+}
+/* line 360, assets\less\common.less */
+.wrap .footer .footerend .end ul li {
+  color: #757474;
+  float: left;
+  font-size: 14px;
+  margin: 0 30px;
+}
+/* line 361, assets\less\common.less */
+.wrap .footer .footerend .end ul li a {
+  color: #757474;
+}
+/* line 363, assets\less\common.less */
+.wrap .footer .footerend .end ul .marginfix {
+  margin: 0;
+}
+/* line 364, assets\less\common.less */
+.wrap .footer .footerend .end ul .fr {
+  float: right;
 }

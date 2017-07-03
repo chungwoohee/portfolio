@@ -1,11 +1,13 @@
 
 $(function () {
-  var $menu = $('.menu li')
+  //var $menu = $('.menu li')
   var $icon = $('.header a')
+  var $end = $('.end li')
+  var $snsBtngroup = $('.snsBtngroup')
 
   $menu.on({
     "mouseenter":function(){
-      $(this).find('a').css('color','white')
+      $(this).find('a').css({'color':'white','transition':'1s'})
     },
     "mouseleave":function(){
       $(this).find('a').css('color','')
@@ -28,7 +30,34 @@ $(function () {
     "mouseleave":function(){
       $(this).find('svg path').attr('fill','#999999')
     }
+  }),
+
+  $end.on({
+    "mouseenter":function(){
+      $(this).find('a').css({'color':'white','text-decoration':'underline'})
+    },
+    "mouseleave":function(){
+      $(this).find('a').css({'color':'','text-decoration':''})
+    }
+  }),
+
+  $snsBtngroup.children('a').on({
+    "mouseenter":function(){
+        var a = $(this).find('svg').attr('ass');
+      $(this).find('.mark').css({'fill':a,'transition':'1s'})
+    },
+    "mouseleave":function(){
+      $(this).find('.mark').css({'fill':'','transition':'1s'})
+    }
   })
+
+
+
+
+
+
+
+
 
 
 })
