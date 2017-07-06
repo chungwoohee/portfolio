@@ -1,6 +1,6 @@
 
 $(function () {
-  //var $menu = $('.menu li')
+  var $menu = $('.menu li')
   var $icon = $('.header a')
   var $end = $('.end li')
   var $snsBtngroup = $('.snsBtngroup')
@@ -51,9 +51,11 @@ $(function () {
     }
   })
 
-
-
-
+    $('.slidemenu>ul>li').hover(function(e){
+      $('.slidemenu>ul>li').find('.sl').stop().slideDown();
+    },function(){
+      $('.slidemenu>ul>li').find('.sl').stop().slideUp();
+    })
 
 
 

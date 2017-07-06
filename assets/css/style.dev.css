@@ -3,18 +3,19 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 /* line 1, assets\less\variable.less */
 .main {
+  overflow: hidden;
   width: 1600px;
-  height: 650px;
   background: url(../../image/pic/main.png);
   background-size: cover;
   margin: 0 auto;
+  margin-top: 50px;
   position: relative;
 }
-/* line 8, assets\less\variable.less */
+/* line 11, assets\less\variable.less */
 .main:hover::after {
   opacity: 0.5;
 }
-/* line 11, assets\less\variable.less */
+/* line 14, assets\less\variable.less */
 .main::after {
   content: "";
   background-color: #000;
@@ -28,32 +29,32 @@
   transition: 1s;
   bottom: 0;
 }
-/* line 25, assets\less\variable.less */
+/* line 28, assets\less\variable.less */
 .main .title {
   width: 1600px;
   position: absolute;
   top: 33%;
 }
-/* line 30, assets\less\variable.less */
+/* line 33, assets\less\variable.less */
 .main .title .workshopTitle {
   position: relative;
   text-align: center;
   z-index: 999;
 }
-/* line 35, assets\less\variable.less */
+/* line 38, assets\less\variable.less */
 .main .title h1 {
   color: #fff;
   font-size: 70px;
   display: inline-block;
 }
-/* line 42, assets\less\variable.less */
+/* line 45, assets\less\variable.less */
 .main span {
   display: block;
   color: #fff;
   font-size: 25px;
   line-height: 30px;
 }
-/* line 49, assets\less\variable.less */
+/* line 52, assets\less\variable.less */
 .main .Btn span {
   width: 240px;
   height: 60px;
@@ -69,11 +70,11 @@
   position: relative;
   z-index: 999;
 }
-/* line 68, assets\less\variable.less */
+/* line 71, assets\less\variable.less */
 .news span {
   display: block;
 }
-/* line 72, assets\less\variable.less */
+/* line 75, assets\less\variable.less */
 .news .Btn span {
   width: 240px;
   height: 60px;
@@ -84,24 +85,24 @@
   text-align: center;
   font-size: 20px;
 }
-/* line 83, assets\less\variable.less */
+/* line 86, assets\less\variable.less */
 .news .rental .paragraph .Btn span {
   width: 120px;
   float: left;
 }
-/* line 88, assets\less\variable.less */
+/* line 91, assets\less\variable.less */
 .news .rent span {
   border: 1px #2ef7b2 solid;
   color: #2ef7b2;
   background-color: #fff;
 }
-/* line 95, assets\less\variable.less */
+/* line 98, assets\less\variable.less */
 .news .hall span {
   background-color: #2ef7b2;
   color: #146348;
   margin-left: 10px;
 }
-/* line 108, assets\less\variable.less */
+/* line 111, assets\less\variable.less */
 section.video .Btn span {
   display: inline-block;
   width: 240px;
@@ -197,52 +198,58 @@ a {
 .wrap .gnb .menu {
   height: 50px;
   background: #000;
+  font-size: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 9999;
+  overflow: hidden;
 }
-/* line 72, assets\less\common.less */
+/* line 79, assets\less\common.less */
 .wrap .gnb .menu .slidemenu {
-  outline: 1px #F00 solid;
-  height: 699px;
-  background: #000;
+  height: 50px;
 }
-/* line 73, assets\less\common.less */
-.wrap .gnb .menu ul {
+/* line 81, assets\less\common.less */
+.wrap .gnb .menu .slidemenu a {
+  color: #999;
+  font-size: 14px;
+  display: inline-block;
+}
+/* line 86, assets\less\common.less */
+.wrap .gnb .menu .slidemenu .en {
+  letter-spacing: 0.18em;
+}
+/* line 87, assets\less\common.less */
+.wrap .gnb .menu .slidemenu > ul {
   margin: 0 auto;
   width: 1600px;
   text-align: center;
   line-height: 50px;
 }
-/* line 78, assets\less\common.less */
-.wrap .gnb .menu ul li {
+/* line 92, assets\less\common.less */
+.wrap .gnb .menu .slidemenu > ul > li {
   display: block;
   float: left;
   width: 200px;
 }
-/* line 82, assets\less\common.less */
-.wrap .gnb .menu ul li .en {
-  letter-spacing: 0.18em;
-}
-/* line 85, assets\less\common.less */
-.wrap .gnb .menu ul li a {
-  color: #999;
-  font-size: 14px;
-}
-/* line 92, assets\less\common.less */
-.wrap .gnb .menu ul > li > ul {
-  width: 100%;
-  height: 100%;
-  z-index: 999;
+/* line 100, assets\less\common.less */
+.wrap .gnb .menu .sl {
+  display: none;
+  height: 600px;
   position: relative;
 }
-/* line 99, assets\less\common.less */
-.wrap .gnb .menu ul > li > ul li {
+/* line 104, assets\less\common.less */
+.wrap .gnb .menu .sl ul li {
   padding-top: 10px;
   line-height: 35px;
 }
-/* line 100, assets\less\common.less */
-.wrap .gnb .menu ul > li > ul li > a {
+/* line 105, assets\less\common.less */
+.wrap .gnb .menu .sl li > a {
   font-size: 13px;
+  width: 100%;
+  height: 100%;
 }
-/* line 107, assets\less\common.less */
+/* line 112, assets\less\common.less */
 .wrap .contents section .h1 {
   border: 1px #Ff0 solid;
   font-size: 38px;
@@ -251,41 +258,41 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-/* line 116, assets\less\common.less */
+/* line 121, assets\less\common.less */
 .wrap .contents section.main {
-  height: 650px;
+  height: 600px;
   background-color: #f2f2f2;
 }
-/* line 121, assets\less\common.less */
+/* line 126, assets\less\common.less */
 .wrap .contents section.news {
   width: 1600px;
   margin: 0 auto;
   margin-top: 50px;
 }
-/* line 126, assets\less\common.less */
+/* line 131, assets\less\common.less */
 .wrap .contents section.news .calendar {
   width: 1600px;
   height: 200px;
   outline: 1px #ccc solid;
   margin-bottom: 50px;
 }
-/* line 133, assets\less\common.less */
+/* line 138, assets\less\common.less */
 .wrap .contents section.news .box {
   width: 1600px;
   height: 930px;
   margin: 0 auto;
 }
-/* line 138, assets\less\common.less */
+/* line 143, assets\less\common.less */
 .wrap .contents section.news .box .paragraph {
   border: 1px #f00 solid;
   margin: 20px;
 }
-/* line 142, assets\less\common.less */
+/* line 147, assets\less\common.less */
 .wrap .contents section.news .box .paragraph h1 {
   border: 1px #f0f solid;
   letter-spacing: 0.09em;
 }
-/* line 147, assets\less\common.less */
+/* line 152, assets\less\common.less */
 .wrap .contents section.news .box .topic {
   width: 450px;
   height: 100%;
@@ -293,31 +300,31 @@ a {
   float: left;
   display: grid;
 }
-/* line 155, assets\less\common.less */
+/* line 160, assets\less\common.less */
 .wrap .contents section.news .box .first {
   outline: 1px #ccc solid;
 }
-/* line 157, assets\less\common.less */
+/* line 162, assets\less\common.less */
 .wrap .contents section.news .box .first h1 {
   font-family: 'Cinzel', serif;
   margin: 0;
 }
-/* line 160, assets\less\common.less */
+/* line 165, assets\less\common.less */
 .wrap .contents section.news .box .second {
   margin: 0 125px;
   outline: 1px #ccc solid;
 }
-/* line 163, assets\less\common.less */
+/* line 168, assets\less\common.less */
 .wrap .contents section.news .box .second h1 {
   font-family: 'Cinzel', serif;
   margin: 0;
 }
-/* line 166, assets\less\common.less */
+/* line 171, assets\less\common.less */
 .wrap .contents section.news .box .article {
   width: 450px;
   height: 460px;
 }
-/* line 171, assets\less\common.less */
+/* line 176, assets\less\common.less */
 .wrap .contents section.news .box .article > span {
   border: 1px #00f solid;
   margin-left: 20px;
@@ -325,108 +332,108 @@ a {
   font-size: 12px;
   font-weight: 600;
 }
-/* line 179, assets\less\common.less */
+/* line 184, assets\less\common.less */
 .wrap .contents section.news .box .img {
   width: 450px;
   height: 450px;
 }
-/* line 184, assets\less\common.less */
+/* line 189, assets\less\common.less */
 .wrap .contents section.news .box img {
   width: 100%;
 }
-/* line 189, assets\less\common.less */
+/* line 194, assets\less\common.less */
 .wrap .contents section.news .box .third h1 {
   margin: 0;
 }
-/* line 190, assets\less\common.less */
+/* line 195, assets\less\common.less */
 .wrap .contents section.news .box .third .rental {
   margin-top: 30px;
 }
-/* line 195, assets\less\common.less */
+/* line 200, assets\less\common.less */
 .wrap .contents section.news .box .third > div {
   outline: 1px #ccc solid;
   width: 450px;
   height: 450px;
 }
-/* line 201, assets\less\common.less */
+/* line 206, assets\less\common.less */
 .wrap .contents section.news .box .third .paragraph .infotitle {
   border: 1px #00f solid;
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 20px;
 }
-/* line 211, assets\less\common.less */
+/* line 216, assets\less\common.less */
 .wrap .contents section.sns {
   width: 100%;
   margin-top: 50px;
 }
-/* line 214, assets\less\common.less */
+/* line 219, assets\less\common.less */
 .wrap .contents section.sns .social {
   width: 1600px;
   height: 474px;
   margin: 0 auto;
 }
-/* line 219, assets\less\common.less */
+/* line 224, assets\less\common.less */
 .wrap .contents section.sns .social li {
   float: left;
   width: 790px;
   height: 474px;
 }
-/* line 224, assets\less\common.less */
+/* line 229, assets\less\common.less */
 .wrap .contents section.sns .social li a > img {
   width: 40px;
   height: 50px;
   float: right;
 }
-/* line 230, assets\less\common.less */
+/* line 235, assets\less\common.less */
 .wrap .contents section.sns .social li .blogimg {
   background-color: #f49ac1;
   outline: 1px #ccc solid;
   height: 400px;
 }
-/* line 236, assets\less\common.less */
+/* line 241, assets\less\common.less */
 .wrap .contents section.sns .social li .snsimg {
   outline: 1px #00F solid;
 }
-/* line 240, assets\less\common.less */
+/* line 245, assets\less\common.less */
 .wrap .contents section.sns .social li .snsimg ul > li {
   outline: 1px #000 solid;
   width: 197.5px;
   height: 200px;
 }
-/* line 248, assets\less\common.less */
+/* line 253, assets\less\common.less */
 .wrap .contents section.sns .social .media {
   margin-left: 20px;
 }
-/* line 255, assets\less\common.less */
+/* line 260, assets\less\common.less */
 .wrap .contents section.video {
   outline: 1px #f0f solid;
   margin: 0 auto;
   margin-top: 50px;
 }
-/* line 260, assets\less\common.less */
+/* line 265, assets\less\common.less */
 .wrap .contents section.video .videoimg {
   width: 1600px;
   margin: 0 auto;
   height: 200px;
 }
-/* line 265, assets\less\common.less */
+/* line 270, assets\less\common.less */
 .wrap .contents section.video .videoimg img {
   width: 100%;
   height: 100%;
 }
-/* line 268, assets\less\common.less */
+/* line 273, assets\less\common.less */
 .wrap .contents section.video .videoaline {
   width: 1600px;
   margin: 0 auto;
 }
-/* line 272, assets\less\common.less */
+/* line 277, assets\less\common.less */
 .wrap .contents section.video .videoaline a > img {
   width: 40px;
   height: 50px;
   float: right;
 }
-/* line 282, assets\less\common.less */
+/* line 287, assets\less\common.less */
 .wrap .footer {
   height: 329px;
   background: #000;
@@ -436,11 +443,11 @@ a {
   font-size: 11px;
   border: 1px #f00 solid;
 }
-/* line 291, assets\less\common.less */
+/* line 296, assets\less\common.less */
 .wrap .footer .footerwrap {
   height: 176px;
 }
-/* line 294, assets\less\common.less */
+/* line 299, assets\less\common.less */
 .wrap .footer .footerwrap .container > div {
   width: 240px;
   height: 73px;
@@ -449,52 +456,52 @@ a {
   margin: 45px 15px 0 0;
   line-height: 20px;
 }
-/* line 304, assets\less\common.less */
+/* line 309, assets\less\common.less */
 .wrap .footer .footerwrap .container p {
   color: #757474;
   font-size: 9px;
 }
-/* line 309, assets\less\common.less */
+/* line 314, assets\less\common.less */
 .wrap .footer .footerwrap .container {
   width: 1600px;
   margin: 0 auto;
 }
-/* line 313, assets\less\common.less */
+/* line 318, assets\less\common.less */
 .wrap .footer .footerwrap .container .info {
   width: 349px;
 }
-/* line 315, assets\less\common.less */
+/* line 320, assets\less\common.less */
 .wrap .footer .footerwrap .container span {
   display: inline-block;
   color: #fff;
   text-transform: uppercase;
   font-weight: normal;
 }
-/* line 322, assets\less\common.less */
+/* line 327, assets\less\common.less */
 .wrap .footer .footerwrap .container .name {
   color: #fff;
 }
-/* line 324, assets\less\common.less */
+/* line 329, assets\less\common.less */
 .wrap .footer .footerwrap .container .pis {
   padding-right: 5px;
   border-right: 1px #ccc solid;
   line-height: 8px;
 }
-/* line 325, assets\less\common.less */
+/* line 330, assets\less\common.less */
 .wrap .footer .footerwrap .container .master {
   font-size: 10px;
 }
-/* line 326, assets\less\common.less */
+/* line 331, assets\less\common.less */
 .wrap .footer .footerwrap .container .local {
   line-height: 11px;
   margin-top: 10px;
 }
-/* line 327, assets\less\common.less */
+/* line 332, assets\less\common.less */
 .wrap .footer .footerwrap .container .num {
   line-height: 11px;
   margin-top: 30px;
 }
-/* line 328, assets\less\common.less */
+/* line 333, assets\less\common.less */
 .wrap .footer .footerwrap .container .email {
   padding: 14px;
   font-size: .65em;
@@ -502,62 +509,62 @@ a {
   text-align: center;
   border: 1px #fff solid;
 }
-/* line 334, assets\less\common.less */
+/* line 339, assets\less\common.less */
 .wrap .footer .footerwrap .container .email a {
   color: #fff;
 }
-/* line 337, assets\less\common.less */
+/* line 342, assets\less\common.less */
 .wrap .footer .footerwrap .container .fallow .snsBtngroup {
   margin-top: 26px;
 }
-/* line 339, assets\less\common.less */
+/* line 344, assets\less\common.less */
 .wrap .footer .footerwrap .container .fallow .snsBtngroup a {
   margin: 0 10px 0 0;
 }
-/* line 340, assets\less\common.less */
+/* line 345, assets\less\common.less */
 .wrap .footer .footerwrap .container .fallow .snsBtngroup a svg {
   width: 25px;
 }
-/* line 348, assets\less\common.less */
+/* line 353, assets\less\common.less */
 .wrap .footer .footerend .notice {
   width: 1600px;
   margin: 0 auto;
   margin-bottom: 44px;
 }
-/* line 352, assets\less\common.less */
+/* line 357, assets\less\common.less */
 .wrap .footer .footerend .notice span {
   display: block;
   color: #fff;
   font-size: 10px;
   color: #757474;
 }
-/* line 360, assets\less\common.less */
+/* line 365, assets\less\common.less */
 .wrap .footer .footerend .end {
   border-top: 1px #262626 solid;
 }
-/* line 363, assets\less\common.less */
+/* line 368, assets\less\common.less */
 .wrap .footer .footerend .end ul {
   width: 1600px;
   margin: 0 auto;
   height: 80px;
   line-height: 80px;
 }
-/* line 364, assets\less\common.less */
+/* line 369, assets\less\common.less */
 .wrap .footer .footerend .end ul li {
   color: #757474;
   float: left;
   font-size: 14px;
   margin: 0 30px;
 }
-/* line 365, assets\less\common.less */
+/* line 370, assets\less\common.less */
 .wrap .footer .footerend .end ul li a {
   color: #757474;
 }
-/* line 367, assets\less\common.less */
+/* line 372, assets\less\common.less */
 .wrap .footer .footerend .end ul .marginfix {
   margin: 0;
 }
-/* line 368, assets\less\common.less */
+/* line 373, assets\less\common.less */
 .wrap .footer .footerend .end ul .fr {
   float: right;
 }
