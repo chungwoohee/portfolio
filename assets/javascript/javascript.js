@@ -24,6 +24,15 @@ $(function () {
   })
 
   $icon.on({
+    "click":function(){
+      $('.menu').find('.sl').slideToggle('slow',function(){
+        });
+      }
+    })
+
+
+
+  $icon.on({
     "mouseenter":function(){
       $(this).find('svg path').attr('fill','white')
     },
@@ -51,6 +60,8 @@ $(function () {
     }
   })
 
+
+
     $('.slidemenu>ul>li').hover(function(e){
       $('.slidemenu>ul>li').find('.sl').stop().slideDown();
     },function(){
@@ -58,8 +69,15 @@ $(function () {
     })
 
 
-
-
+/*
+    $('.menuBtn').hover(function(e){
+      e.preventDefault();
+      console.log(e);
+      $('.menu').find('.sl').stop().slideDown();
+    },function(){
+      $('.menu').find('.sl').stop().slideUp();
+    })
+*/
 
 
 })
