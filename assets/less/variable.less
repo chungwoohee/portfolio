@@ -1,12 +1,23 @@
   .main{
     overflow: hidden;
-    width: 1600px;
+    //width: 1200px;
     //height: 650px;
     background: url(../../image/pic/main.png);
     background-size: cover;
-    margin: 0 auto;
-    margin-top: 50px;
+    //margin: 0 auto;
+    margin-top: 54px;
     position: relative;
+
+    &::before{
+      content: "";
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
 
     &:hover::after{
       opacity:0.5;
@@ -26,76 +37,68 @@
     }
 
     .title{
-      width: 1600px;
-      position: absolute;
-      top: 33%;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      z-index: 11;
+      vertical-align: middle;
 
       .workshopTitle{
-        position: relative;
-        text-align: center;
-        z-index: 999;}
-
-      h1{
-        color: @color-white;
-        font-size: 70px;
-        display: inline-block;
+        font-family: 'Noto Sans', sans-serif;
+        color: #fff;
+        font-size: 52px;
+        width: 930px;
       }
+
+      h1{display: inline-block;}
     }
 
-    span{
-      display: block;
-      color: #fff;
-      font-size: 25px;
-      line-height: 30px;
-    }
-
-    .Btn span{
+    .Btn{
       width: 240px;
       height: 60px;
       color: @color-white;
       background-color: @color-black;
-      line-height: 51px;
+      line-height: 60px;
       text-align: center;
       font-size: 20px;
-      border: 1px #000 solid;
       border-radius: 2px;
-      margin: 0 auto;
-      margin-top: 20px;
-      position: relative;
-      z-index: 999;
+      margin-top: 30px;
+      display: inline-block;
     }
+
   } //main close
 
   .news{
 
     span{
-      display: block;
+      display: inline-block;
     }
 
-    .Btn span{
+    .Btn{
       width: 240px;
       height: 60px;
       color: @color-white;
       background-color: @color-black;
-      border-radius: 3px;
-      line-height: 51px;
+      border-radius: 2px;
+      line-height: 60px;
       text-align: center;
       font-size: 20px;
+
+      display: inline-block;
     }
 
-    .rental .paragraph .Btn span{
-      width: 120px;
-      float: left;
-    }
+    .mny{
+    outline: 1px #f00 solid;
+    width: 46.7%;}
 
-    .rent span{
+    .rent{
       border: 1px @color-main solid;
       color: @color-main;
       background-color: @color-white;
 
     }
 
-    .hall span{
+    .hall{
       background-color: @color-main;
       color: @color-fonthover;
       margin-left: 10px;

@@ -1,6 +1,6 @@
 
 $(function () {
-  var $menu = $('.menu li')
+  //var $menu = $('.menu li')
   var $icon = $('.header a')
   var $end = $('.end li')
   var $snsBtngroup = $('.snsBtngroup')
@@ -22,6 +22,15 @@ $(function () {
       $(this).find('svg rect').attr('fill','#999999')
     }
   })
+
+  $icon.on({
+    "click":function(){
+      $('.menu').find('.sl').slideToggle('slow',function(){
+        });
+      }
+    })
+
+
 
   $icon.on({
     "mouseenter":function(){
@@ -51,6 +60,8 @@ $(function () {
     }
   })
 
+
+
     $('.slidemenu>ul>li').hover(function(e){
       $('.slidemenu>ul>li').find('.sl').stop().slideDown();
     },function(){
@@ -58,8 +69,15 @@ $(function () {
     })
 
 
-
-
+/*
+    $('.menuBtn').hover(function(e){
+      e.preventDefault();
+      console.log(e);
+      $('.menu').find('.sl').stop().slideDown();
+    },function(){
+      $('.menu').find('.sl').stop().slideUp();
+    })
+*/
 
 
 })

@@ -30,27 +30,24 @@ a{text-decoration: none;}
   width: 100%;
   height: 3483px;
 
-  .logo{
-      font-family: 'Cinzel',serif;
-      color: @color-white;
-      text-transform: uppercase;
-      font-weight: lighter;
-      display: block;
-      width: 124px;
-      margin: 0 auto;
-      letter-spacing: 0.18em;
-      a{
-        color: @color-white
-      }
-  }
-
   h1{font-family: 'Noto Sans', sans-serif;}
 
   .gnb{
+
     .header{
       height: 100px;
       background: @color-black;
       border-bottom: 1px #262626 solid;
+
+      h1{text-align: center;}
+
+      .logo{
+          font-family: 'Cinzel',serif;
+          color: @color-white;
+          text-transform: uppercase;
+          font-weight: lighter;
+          letter-spacing: .25em;
+      }
 
       .menuBtn{
         position: relative;
@@ -68,7 +65,7 @@ a{text-decoration: none;}
 
   .menu{
     height: 50px;
-    background: @color-black;
+    background-color: rgba(0,0,0,.9);
     font-size: 0;
     position: absolute;
     width: 100%;
@@ -77,22 +74,22 @@ a{text-decoration: none;}
     overflow: hidden;
 
     .slidemenu{
-      height: 50px; //650
+      background-color: #000;
+      height: 54px;
       a{
         color: #999;
-        font-size: 14px;
+        font-size: 13px;
         display: inline-block;
       }
       .en{letter-spacing: 0.18em;}
+
         >ul{
-          margin: 0 auto;
-          width: 1600px;
           text-align: center;
           line-height: 50px;
         >li{
         display: block;
         float: left;
-        width: 200px;
+        width: 12.5%;
       }
     }
   }  //slidemenu close
@@ -110,8 +107,8 @@ a{text-decoration: none;}
 
 .contents{
   section .h1{
-    border: 1px #Ff0 solid;
-    font-size: 38px;
+    border: 1px #ff0 solid;
+    font-size: 25px;
     display: inline-block;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -121,24 +118,23 @@ a{text-decoration: none;}
   section.main{
     height: 600px;
     background-color: #f2f2f2;
+    text-align: center;
   }
 
   section.news{
-    width: 1600px;
-    margin: 0 auto;
-    margin-top: 50px;
+
+    max-width: 95%;
+    margin: 50px auto;
 
     .calendar{
-      width: 1600px;
       height: 200px;
       outline: 1px @color-line solid;
       margin-bottom: 50px;
     }
 
-      .box{
-        width: 1600px;
-        height: 930px;
-        margin: 0 auto;
+    .box{
+      //outline: 1px #f00 solid;
+      height: 730px;
 
         .paragraph{
           border: 1px #f00 solid;
@@ -150,40 +146,41 @@ a{text-decoration: none;}
         }
 
         .topic{
-          width: 450px;
+          border: 1px #CCC solid;
+          width: 33.333333%;
+          box-sizing: border-box;
+          padding: 0 2%;
           height: 100%;
-          margin: 0 auto;
           float: left;
           display: grid;
         }
 
         .first{
-          outline: 1px @color-line solid;
+
           h1{font-family: 'Cinzel',serif; margin: 0;}
         }
 
-        .second{
+        /*.second{
           margin: 0 125px;
           outline: 1px @color-line solid;
           h1{font-family: 'Cinzel',serif; margin: 0;}
-        }
+
+        }*/
 
         .article{
-          width: 450px;
-          height: 460px;
+          //outline: 1px #ccc solid;
         }
 
-        .article>span{
+        .tinytitle{
           border: 1px #00f solid;
-          margin-left: 20px;
           text-align: center;
           font-size: 12px;
           font-weight: 600;
         }
 
         .img{
-          width: 450px;
-          height: 450px;
+          //width: 250px;
+          //height: 250px;
         }
 
         img{
@@ -193,14 +190,13 @@ a{text-decoration: none;}
         .third{
           h1{margin: 0;}
           .rental{
-            margin-top: 30px;
+            //margin-top: 30px;
           }
         }
 
         .third>div{
-          outline: 1px @color-line solid;
-          width: 450px;
-          height: 450px;
+          border: 1px @color-line solid;
+          height: 100%;
         }
 
         .third .paragraph .infotitle{
@@ -216,10 +212,9 @@ a{text-decoration: none;}
     section.sns{
       width: 100%;
       margin-top: 50px;
+
       .social{
-        width: 1600px;
         height: 474px;
-        margin: 0 auto;
 
           li{
             float: left;
@@ -259,20 +254,15 @@ a{text-decoration: none;}
 
     section.video{
       outline: 1px #f0f solid;
-      margin: 0 auto;
       margin-top: 50px;
 
       .videoimg{
-        width: 1600px;
-        margin: 0 auto;
         height: 200px;
 
         img{width: 100%; height: 100%;}
       } //videoimg close
 
       .videoaline{
-        width: 1600px;
-        margin: 0 auto;
 
         a>img{
           width: 40px;
@@ -312,8 +302,6 @@ a{text-decoration: none;}
       }
 
       .container {
-        width: 1600px;
-        margin: 0 auto;;
 
         .info{width: 349px;}
 
@@ -351,8 +339,6 @@ a{text-decoration: none;}
     .footerend{
 
       .notice{
-        width: 1600px;
-        margin: 0 auto;
         margin-bottom: 44px;
         span{
         display: block;
@@ -365,8 +351,8 @@ a{text-decoration: none;}
       .end{
         border-top: 1px #262626 solid;
 
-        ul{width: 1600px; margin: 0 auto; height: 80px;  line-height: 80px;
-          li{color: #757474;  float: left;  font-size: 14px; margin: 0 30px;
+        ul{height: 80px;  line-height: 80px;
+          li{color: #757474;  float: left;  font-size: 13px; margin: 0 30px;
           a{color: #757474;}
           }
           .marginfix{margin: 0;}
