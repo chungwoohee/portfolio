@@ -272,130 +272,151 @@ a {
   outline: 1px #ccc solid;
   margin-bottom: 50px;
 }
-/* line 135, assets/less/common.less */
+/* line 137, assets/less/common.less */
 .wrap .contents section.news .box {
   height: 730px;
-  /*.second{
+  /*.paragraph{
+          border: 1px #f00 solid;
+          margin: 20px;
+
+          h1{border: 1px #f0f solid;
+            letter-spacing: 0.09em;
+          }
+        }
+
+        .topic{
+          border: 1px #CCC solid;
+          width: 33.333333%;
+          box-sizing: border-box;
+          padding: 0 2%;
+          height: 100%;
+          float: left;
+          display: grid;
+        }
+
+        .first{
+
+          h1{font-family: 'Cinzel',serif; margin: 0;}
+        }
+
+        /*.second{
           margin: 0 125px;
           outline: 1px @color-line solid;
           h1{font-family: 'Cinzel',serif; margin: 0;}
 
-        }*/
+        }
+
+        .article{
+          //outline: 1px #ccc solid;
+        }
+
+        .tinytitle{
+          border: 1px #00f solid;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 600;
+        }
+
+        .img{
+          //width: 250px;
+          //height: 250px;
+        }
+
+        img{
+          width: 100%;
+        }
+
+        .third{
+          h1{margin: 0;}
+          .rental{
+            //margin-top: 30px;
+          }
+        }
+
+        .third>div{
+          border: 1px @color-line solid;
+          height: 100%;
+        }
+
+        .third .paragraph .infotitle{
+          border: 1px #00f solid;
+          font-size: 12px;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        */
 }
-/* line 139, assets/less/common.less */
-.wrap .contents section.news .box .paragraph {
+/* line 141, assets/less/common.less */
+.wrap .contents section.news .box ul {
   border: 1px #f00 solid;
-  margin: 20px;
 }
-/* line 143, assets/less/common.less */
-.wrap .contents section.news .box .paragraph h1 {
-  border: 1px #f0f solid;
-  letter-spacing: 0.09em;
-}
-/* line 148, assets/less/common.less */
-.wrap .contents section.news .box .topic {
-  border: 1px #CCC solid;
-  width: 33.333333%;
-  box-sizing: border-box;
-  padding: 0 2%;
-  height: 100%;
+/* line 145, assets/less/common.less */
+.wrap .contents section.news .box li {
+  max-width: 400px;
   float: left;
-  display: grid;
 }
-/* line 160, assets/less/common.less */
-.wrap .contents section.news .box .first h1 {
-  font-family: 'Cinzel', serif;
-  margin: 0;
-}
-/* line 174, assets/less/common.less */
-.wrap .contents section.news .box .tinytitle {
-  border: 1px #00f solid;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 600;
-}
-/* line 186, assets/less/common.less */
-.wrap .contents section.news .box img {
-  width: 100%;
-}
-/* line 191, assets/less/common.less */
-.wrap .contents section.news .box .third h1 {
-  margin: 0;
-}
-/* line 197, assets/less/common.less */
-.wrap .contents section.news .box .third > div {
-  border: 1px #ccc solid;
-  height: 100%;
-}
-/* line 202, assets/less/common.less */
-.wrap .contents section.news .box .third .paragraph .infotitle {
-  border: 1px #00f solid;
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-/* line 212, assets/less/common.less */
+/* line 234, assets/less/common.less */
 .wrap .contents section.sns {
   width: 100%;
   margin-top: 50px;
 }
-/* line 216, assets/less/common.less */
+/* line 238, assets/less/common.less */
 .wrap .contents section.sns .social {
   height: 474px;
 }
-/* line 219, assets/less/common.less */
+/* line 241, assets/less/common.less */
 .wrap .contents section.sns .social li {
   float: left;
   width: 790px;
   height: 474px;
 }
-/* line 224, assets/less/common.less */
+/* line 246, assets/less/common.less */
 .wrap .contents section.sns .social li a > img {
   width: 40px;
   height: 50px;
   float: right;
 }
-/* line 230, assets/less/common.less */
+/* line 252, assets/less/common.less */
 .wrap .contents section.sns .social li .blogimg {
   background-color: #f49ac1;
   outline: 1px #ccc solid;
   height: 400px;
 }
-/* line 236, assets/less/common.less */
+/* line 258, assets/less/common.less */
 .wrap .contents section.sns .social li .snsimg {
   outline: 1px #00F solid;
 }
-/* line 240, assets/less/common.less */
+/* line 262, assets/less/common.less */
 .wrap .contents section.sns .social li .snsimg ul > li {
   outline: 1px #000 solid;
   width: 197.5px;
   height: 200px;
 }
-/* line 248, assets/less/common.less */
+/* line 270, assets/less/common.less */
 .wrap .contents section.sns .social .media {
   margin-left: 20px;
 }
-/* line 255, assets/less/common.less */
+/* line 277, assets/less/common.less */
 .wrap .contents section.video {
   outline: 1px #f0f solid;
   margin-top: 50px;
 }
-/* line 259, assets/less/common.less */
+/* line 281, assets/less/common.less */
 .wrap .contents section.video .videoimg {
   height: 200px;
 }
-/* line 262, assets/less/common.less */
+/* line 284, assets/less/common.less */
 .wrap .contents section.video .videoimg img {
   width: 100%;
   height: 100%;
 }
-/* line 267, assets/less/common.less */
+/* line 289, assets/less/common.less */
 .wrap .contents section.video .videoaline a > img {
   width: 40px;
   height: 50px;
   float: right;
 }
-/* line 277, assets/less/common.less */
+/* line 299, assets/less/common.less */
 .wrap .footer {
   height: 329px;
   background: #000;
@@ -405,11 +426,11 @@ a {
   font-size: 11px;
   border: 1px #f00 solid;
 }
-/* line 286, assets/less/common.less */
+/* line 308, assets/less/common.less */
 .wrap .footer .footerwrap {
   height: 176px;
 }
-/* line 289, assets/less/common.less */
+/* line 311, assets/less/common.less */
 .wrap .footer .footerwrap .container > div {
   width: 240px;
   height: 73px;
@@ -418,47 +439,47 @@ a {
   margin: 45px 15px 0 0;
   line-height: 20px;
 }
-/* line 299, assets/less/common.less */
+/* line 321, assets/less/common.less */
 .wrap .footer .footerwrap .container p {
   color: #757474;
   font-size: 9px;
 }
-/* line 306, assets/less/common.less */
+/* line 328, assets/less/common.less */
 .wrap .footer .footerwrap .container .info {
   width: 349px;
 }
-/* line 308, assets/less/common.less */
+/* line 330, assets/less/common.less */
 .wrap .footer .footerwrap .container span {
   display: inline-block;
   color: #fff;
   text-transform: uppercase;
   font-weight: normal;
 }
-/* line 315, assets/less/common.less */
+/* line 337, assets/less/common.less */
 .wrap .footer .footerwrap .container .name {
   color: #fff;
 }
-/* line 317, assets/less/common.less */
+/* line 339, assets/less/common.less */
 .wrap .footer .footerwrap .container .pis {
   padding-right: 5px;
   border-right: 1px #ccc solid;
   line-height: 8px;
 }
-/* line 318, assets/less/common.less */
+/* line 340, assets/less/common.less */
 .wrap .footer .footerwrap .container .master {
   font-size: 10px;
 }
-/* line 319, assets/less/common.less */
+/* line 341, assets/less/common.less */
 .wrap .footer .footerwrap .container .local {
   line-height: 11px;
   margin-top: 10px;
 }
-/* line 320, assets/less/common.less */
+/* line 342, assets/less/common.less */
 .wrap .footer .footerwrap .container .num {
   line-height: 11px;
   margin-top: 30px;
 }
-/* line 321, assets/less/common.less */
+/* line 343, assets/less/common.less */
 .wrap .footer .footerwrap .container .email {
   padding: 14px;
   font-size: .65em;
@@ -466,58 +487,58 @@ a {
   text-align: center;
   border: 1px #fff solid;
 }
-/* line 327, assets/less/common.less */
+/* line 349, assets/less/common.less */
 .wrap .footer .footerwrap .container .email a {
   color: #fff;
 }
-/* line 330, assets/less/common.less */
+/* line 352, assets/less/common.less */
 .wrap .footer .footerwrap .container .fallow .snsBtngroup {
   margin-top: 26px;
 }
-/* line 332, assets/less/common.less */
+/* line 354, assets/less/common.less */
 .wrap .footer .footerwrap .container .fallow .snsBtngroup a {
   margin: 0 10px 0 0;
 }
-/* line 333, assets/less/common.less */
+/* line 355, assets/less/common.less */
 .wrap .footer .footerwrap .container .fallow .snsBtngroup a svg {
   width: 25px;
 }
-/* line 341, assets/less/common.less */
+/* line 363, assets/less/common.less */
 .wrap .footer .footerend .notice {
   margin-bottom: 44px;
 }
-/* line 343, assets/less/common.less */
+/* line 365, assets/less/common.less */
 .wrap .footer .footerend .notice span {
   display: block;
   color: #fff;
   font-size: 10px;
   color: #757474;
 }
-/* line 351, assets/less/common.less */
+/* line 373, assets/less/common.less */
 .wrap .footer .footerend .end {
   border-top: 1px #262626 solid;
 }
-/* line 354, assets/less/common.less */
+/* line 376, assets/less/common.less */
 .wrap .footer .footerend .end ul {
   height: 80px;
   line-height: 80px;
 }
-/* line 355, assets/less/common.less */
+/* line 377, assets/less/common.less */
 .wrap .footer .footerend .end ul li {
   color: #757474;
   float: left;
   font-size: 13px;
   margin: 0 30px;
 }
-/* line 356, assets/less/common.less */
+/* line 378, assets/less/common.less */
 .wrap .footer .footerend .end ul li a {
   color: #757474;
 }
-/* line 358, assets/less/common.less */
+/* line 380, assets/less/common.less */
 .wrap .footer .footerend .end ul .marginfix {
   margin: 0;
 }
-/* line 359, assets/less/common.less */
+/* line 381, assets/less/common.less */
 .wrap .footer .footerend .end ul .fr {
   float: right;
 }
