@@ -266,25 +266,21 @@ a {
   max-width: 95%;
   margin: 50px auto;
 }
-/* line 129, assets/less/common.less */
+/* line 128, assets/less/common.less */
 .wrap .contents section.news .calendar {
   height: 200px;
-  outline: 1px #ccc solid;
+  outline: 1px #000 solid;
   margin-bottom: 50px;
 }
-/* line 137, assets/less/common.less */
+/* line 136, assets/less/common.less */
 .wrap .contents section.news .box {
-  height: 730px;
+  height: 700px;
   /*.paragraph{
           border: 1px #f00 solid;
           margin: 20px;
-
-          h1{border: 1px #f0f solid;
-            letter-spacing: 0.09em;
-          }
         }
 
-        .topic{
+        .topi
           border: 1px #CCC solid;
           width: 33.333333%;
           box-sizing: border-box;
@@ -347,76 +343,103 @@ a {
         */
 }
 /* line 141, assets/less/common.less */
+.wrap .contents section.news .box .first {
+  border: 1px #f0f solid;
+}
+/* line 146, assets/less/common.less */
 .wrap .contents section.news .box ul {
-  border: 1px #f00 solid;
+  margin: 0 -2%;
 }
-/* line 145, assets/less/common.less */
+/* line 151, assets/less/common.less */
 .wrap .contents section.news .box li {
-  max-width: 400px;
   float: left;
+  width: 25%;
+  padding: 0 2%;
+  box-sizing: border-box;
+  position: relative;
+  height: 300px;
 }
-/* line 234, assets/less/common.less */
+/* line 162, assets/less/common.less */
+.wrap .contents section.news .box li .topic a {
+  outline: 1px #f0f solid;
+}
+/* line 166, assets/less/common.less */
+.wrap .contents section.news .box li .title {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  color: #CCC;
+}
+/* line 172, assets/less/common.less */
+.wrap .contents section.news .box li .paragraph {
+  border-top: 1px #000 solid;
+}
+/* line 176, assets/less/common.less */
+.wrap .contents section.news .box li .paragraph h1 {
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* line 255, assets/less/common.less */
 .wrap .contents section.sns {
   width: 100%;
   margin-top: 50px;
 }
-/* line 238, assets/less/common.less */
+/* line 259, assets/less/common.less */
 .wrap .contents section.sns .social {
   height: 474px;
 }
-/* line 241, assets/less/common.less */
+/* line 262, assets/less/common.less */
 .wrap .contents section.sns .social li {
   float: left;
   width: 790px;
   height: 474px;
 }
-/* line 246, assets/less/common.less */
+/* line 267, assets/less/common.less */
 .wrap .contents section.sns .social li a > img {
   width: 40px;
   height: 50px;
   float: right;
 }
-/* line 252, assets/less/common.less */
+/* line 273, assets/less/common.less */
 .wrap .contents section.sns .social li .blogimg {
   background-color: #f49ac1;
   outline: 1px #ccc solid;
   height: 400px;
 }
-/* line 258, assets/less/common.less */
+/* line 279, assets/less/common.less */
 .wrap .contents section.sns .social li .snsimg {
   outline: 1px #00F solid;
 }
-/* line 262, assets/less/common.less */
+/* line 283, assets/less/common.less */
 .wrap .contents section.sns .social li .snsimg ul > li {
   outline: 1px #000 solid;
   width: 197.5px;
   height: 200px;
 }
-/* line 270, assets/less/common.less */
+/* line 291, assets/less/common.less */
 .wrap .contents section.sns .social .media {
   margin-left: 20px;
 }
-/* line 277, assets/less/common.less */
+/* line 298, assets/less/common.less */
 .wrap .contents section.video {
   outline: 1px #f0f solid;
   margin-top: 50px;
 }
-/* line 281, assets/less/common.less */
+/* line 302, assets/less/common.less */
 .wrap .contents section.video .videoimg {
   height: 200px;
 }
-/* line 284, assets/less/common.less */
+/* line 305, assets/less/common.less */
 .wrap .contents section.video .videoimg img {
   width: 100%;
   height: 100%;
 }
-/* line 289, assets/less/common.less */
+/* line 310, assets/less/common.less */
 .wrap .contents section.video .videoaline a > img {
   width: 40px;
   height: 50px;
   float: right;
 }
-/* line 299, assets/less/common.less */
+/* line 320, assets/less/common.less */
 .wrap .footer {
   height: 329px;
   background: #000;
@@ -426,11 +449,11 @@ a {
   font-size: 11px;
   border: 1px #f00 solid;
 }
-/* line 308, assets/less/common.less */
+/* line 329, assets/less/common.less */
 .wrap .footer .footerwrap {
   height: 176px;
 }
-/* line 311, assets/less/common.less */
+/* line 332, assets/less/common.less */
 .wrap .footer .footerwrap .container > div {
   width: 240px;
   height: 73px;
@@ -439,47 +462,47 @@ a {
   margin: 45px 15px 0 0;
   line-height: 20px;
 }
-/* line 321, assets/less/common.less */
+/* line 342, assets/less/common.less */
 .wrap .footer .footerwrap .container p {
   color: #757474;
   font-size: 9px;
 }
-/* line 328, assets/less/common.less */
+/* line 349, assets/less/common.less */
 .wrap .footer .footerwrap .container .info {
   width: 349px;
 }
-/* line 330, assets/less/common.less */
+/* line 351, assets/less/common.less */
 .wrap .footer .footerwrap .container span {
   display: inline-block;
   color: #fff;
   text-transform: uppercase;
   font-weight: normal;
 }
-/* line 337, assets/less/common.less */
+/* line 358, assets/less/common.less */
 .wrap .footer .footerwrap .container .name {
   color: #fff;
 }
-/* line 339, assets/less/common.less */
+/* line 360, assets/less/common.less */
 .wrap .footer .footerwrap .container .pis {
   padding-right: 5px;
   border-right: 1px #ccc solid;
   line-height: 8px;
 }
-/* line 340, assets/less/common.less */
+/* line 361, assets/less/common.less */
 .wrap .footer .footerwrap .container .master {
   font-size: 10px;
 }
-/* line 341, assets/less/common.less */
+/* line 362, assets/less/common.less */
 .wrap .footer .footerwrap .container .local {
   line-height: 11px;
   margin-top: 10px;
 }
-/* line 342, assets/less/common.less */
+/* line 363, assets/less/common.less */
 .wrap .footer .footerwrap .container .num {
   line-height: 11px;
   margin-top: 30px;
 }
-/* line 343, assets/less/common.less */
+/* line 364, assets/less/common.less */
 .wrap .footer .footerwrap .container .email {
   padding: 14px;
   font-size: .65em;
@@ -487,58 +510,58 @@ a {
   text-align: center;
   border: 1px #fff solid;
 }
-/* line 349, assets/less/common.less */
+/* line 370, assets/less/common.less */
 .wrap .footer .footerwrap .container .email a {
   color: #fff;
 }
-/* line 352, assets/less/common.less */
+/* line 373, assets/less/common.less */
 .wrap .footer .footerwrap .container .fallow .snsBtngroup {
   margin-top: 26px;
 }
-/* line 354, assets/less/common.less */
+/* line 375, assets/less/common.less */
 .wrap .footer .footerwrap .container .fallow .snsBtngroup a {
   margin: 0 10px 0 0;
 }
-/* line 355, assets/less/common.less */
+/* line 376, assets/less/common.less */
 .wrap .footer .footerwrap .container .fallow .snsBtngroup a svg {
   width: 25px;
 }
-/* line 363, assets/less/common.less */
+/* line 384, assets/less/common.less */
 .wrap .footer .footerend .notice {
   margin-bottom: 44px;
 }
-/* line 365, assets/less/common.less */
+/* line 386, assets/less/common.less */
 .wrap .footer .footerend .notice span {
   display: block;
   color: #fff;
   font-size: 10px;
   color: #757474;
 }
-/* line 373, assets/less/common.less */
+/* line 394, assets/less/common.less */
 .wrap .footer .footerend .end {
   border-top: 1px #262626 solid;
 }
-/* line 376, assets/less/common.less */
+/* line 397, assets/less/common.less */
 .wrap .footer .footerend .end ul {
   height: 80px;
   line-height: 80px;
 }
-/* line 377, assets/less/common.less */
+/* line 398, assets/less/common.less */
 .wrap .footer .footerend .end ul li {
   color: #757474;
   float: left;
   font-size: 13px;
   margin: 0 30px;
 }
-/* line 378, assets/less/common.less */
+/* line 399, assets/less/common.less */
 .wrap .footer .footerend .end ul li a {
   color: #757474;
 }
-/* line 380, assets/less/common.less */
+/* line 401, assets/less/common.less */
 .wrap .footer .footerend .end ul .marginfix {
   margin: 0;
 }
-/* line 381, assets/less/common.less */
+/* line 402, assets/less/common.less */
 .wrap .footer .footerend .end ul .fr {
   float: right;
 }

@@ -122,13 +122,12 @@ a{text-decoration: none;}
   }
 
   section.news{
-
     max-width: 95%;
     margin: 50px auto;
 
     .calendar{
       height: 200px;
-      outline: 1px @color-line solid;
+      outline: 1px @color-black solid;
       margin-bottom: 50px;
     }
 
@@ -136,37 +135,59 @@ a{text-decoration: none;}
 //------ box ul li 수정시작
     .box{
       //outline: 1px #f00 solid;
-      height: 730px;
+      height: 700px;
 
-      ul{
-        border: 1px #f00 solid;
+
+      .first{
+        border: 1px #f0f solid;
+        background: url("../../image/pic/workshop.jpg" alt="");
       }
 
-      li{max-width: 400px; float: left;}
+      ul{
+        //border: 1px #f00 solid;
+        margin: 0 -2%;
+      }
+
+      li{
+        //border: 1px #f00 solid;
+        float: left;
+        width: 25%;
+        padding: 0 2%;
+        box-sizing: border-box;
+        position: relative;
+        height: 300px;
+
+        .topic{
+
+          a{
+            outline: 1px #f0f solid;}
+        }
+
+        .title{
+          font-family: 'Cinzel',serif;
+          font-size: 11px;
+          color: #CCC;
+        }
+
+        .paragraph{
+          border-top: 1px #000 solid;
+        }
+
+        .paragraph h1{
+          //border: 1px #f0f solid;
+          text-align: center;
+          letter-spacing: 0.03em
+        }
 
 
-
-
-
-
-
-
-
-
-
-
-
+      } //li close
 
         /*.paragraph{
           border: 1px #f00 solid;
           margin: 20px;
-
-          h1{border: 1px #f0f solid;
-            letter-spacing: 0.09em;
-          }
         }
 
-        .topic{
+        .topi
           border: 1px #CCC solid;
           width: 33.333333%;
           box-sizing: border-box;
