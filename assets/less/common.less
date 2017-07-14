@@ -106,14 +106,16 @@ a{text-decoration: none;}
 } //gnb close
 
 .contents{
-  section .h1{
-    border: 1px #ff0 solid;
-    font-size: 25px;
-    display: inline-block;
-    margin-bottom: 20px;
+
+  .subject{
+    margin-top: 10px;
+    border: 1px #00f solid;
+    font-family: 'Cinzel',serif;
+    letter-spacing: -.01em;
+    font-size: 1.6em;
+    line-height: 1.1em;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
+  } // subject h1 close
 
   section.main{
     height: 600px;
@@ -127,130 +129,117 @@ a{text-decoration: none;}
 
     .calendar{
       height: 200px;
-      outline: 1px @color-black solid;
+      //outline: 1px @color-black solid;
       margin-bottom: 50px;
     }
 
 
-//------ box ul li 수정시작
     .box{
-      //outline: 1px #f00 solid;
-      height: 700px;
+      display: block;
+      width: 100%;
+      top: 0;
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif;
 
-
-      .first{
-        border: 1px #f0f solid;
-        background: url("../../image/pic/workshop.jpg" alt="");
+      .Btn{
       }
 
-      ul{
-        //border: 1px #f00 solid;
-        margin: 0 -2%;
+      img{
+        width: 100%;
+        display: block;
       }
 
-      li{
-        //border: 1px #f00 solid;
-        float: left;
-        width: 25%;
-        padding: 0 2%;
-        box-sizing: border-box;
-        position: relative;
-        height: 300px;
+      .lowbox img{
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        height: auto;
+      }
 
-        .topic{
-
-          a{
-            outline: 1px #f0f solid;}
-        }
-
-        .title{
-          font-family: 'Cinzel',serif;
-          font-size: 11px;
-          color: #CCC;
-        }
+      .lowbox{
+        display: table;
+        width: auto;
+        margin-left: -30px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        border-spacing: 30px 0;
+        border-collapse: separate;
 
         .paragraph{
-          border-top: 1px #000 solid;
-        }
+          padding: 30px;
 
-        .paragraph h1{
-          //border: 1px #f0f solid;
-          text-align: center;
-          letter-spacing: 0.03em
-        }
-
-
-      } //li close
-
-        /*.paragraph{
-          border: 1px #f00 solid;
-          margin: 20px;
-        }
-
-        .topi
-          border: 1px #CCC solid;
-          width: 33.333333%;
-          box-sizing: border-box;
-          padding: 0 2%;
-          height: 100%;
-          float: left;
-          display: grid;
-        }
-
-        .first{
-
-          h1{font-family: 'Cinzel',serif; margin: 0;}
-        }
-
-        /*.second{
-          margin: 0 125px;
-          outline: 1px @color-line solid;
-          h1{font-family: 'Cinzel',serif; margin: 0;}
-
-        }
-
-        .article{
-          //outline: 1px #ccc solid;
-        }
-
-        .tinytitle{
-          border: 1px #00f solid;
-          text-align: center;
-          font-size: 12px;
-          font-weight: 600;
-        }
-
-        .img{
-          //width: 250px;
-          //height: 250px;
-        }
-
-        img{
-          width: 100%;
-        }
-
-        .third{
-          h1{margin: 0;}
-          .rental{
-            //margin-top: 30px;
+          .inner{
+            font-size: 12px;
           }
+
+          .title{
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: .75rem;
+            line-height: 1em;
+          } //title close
+
+        }//paragraph close
+      } //lowbox close
+
+      .topic{
+        display: table-cell;
+        border-bottom: 1px #d9d9d9 solid;
+        border-left: 1px #d9d9d9 solid;
+        border-right: 1px #d9d9d9 solid;
+        position: relative;
+        vertical-align: top;
+        padding-bottom: 80px;
+      }
+
+      .lastbox{
+        border: 1px #d9d9d9 solid;
+      }
+
+      .first{
+        width: 67.4%;
+        vertical-align: baseline;
+
+
+        .bucket{
+          //outline: 1px #000 solid;
+          width: 50%;
+          display: inline-block;
+          vertical-align: top;
+          padding-right: 15px;
+          padding-bottom: 80px;
+          box-sizing: border-box;
         }
 
-        .third>div{
-          border: 1px @color-line solid;
-          height: 100%;
+        .inner{
+          //outline: 1px #000 solid;
+          width: 50%;
+          display: inline-block;
+          vertical-align: top;
+          padding-left: 15px;
+          margin-left: -5px;
+          box-sizing: border-box;
         }
+      } // first close
 
-        .third .paragraph .infotitle{
-          border: 1px #00f solid;
-          font-size: 12px;
-          font-weight: 600;
-          margin-bottom: 20px;
+      .second{
+        width: 32.6%;
+
+        .inner{
+          padding-top: 10px;
         }
-        */
+      }
+
 
       } //box close
-    } //news close
+    } // section.news close
+
+
+
+
+
+
+
 
     section.sns{
       width: 100%;
