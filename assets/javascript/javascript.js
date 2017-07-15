@@ -1,6 +1,6 @@
 
 $(function () {
-  //var $menu = $('.menu li')
+  var $menu = $('.menu li')
   var $icon = $('.header a')
   var $end = $('.end li')
   var $snsBtngroup = $('.snsBtngroup')
