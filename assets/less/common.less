@@ -109,7 +109,7 @@ a{text-decoration: none;}
 
   .subject{
     margin-top: 10px;
-    border: 1px #00f solid;
+    //border: 1px #00f solid;
     font-family: 'Cinzel',serif;
     letter-spacing: -.01em;
     font-size: 1.6em;
@@ -194,7 +194,7 @@ a{text-decoration: none;}
 
       .first{
         width: 67.4%;
-        vertical-align: baseline;
+        //vertical-align: baseline;
 
         .bucket{
           //outline: 1px #000 solid;
@@ -230,49 +230,33 @@ a{text-decoration: none;}
     section.socialnetwork{
       max-width: 95%;
       margin: 50px auto;
+      display: block;
 
       .sns{
-        display: block;
+        display: table;
         width: 100%;
         top: 0;
         margin: 0;
         font-family: 'Noto Sans', sans-serif;
-        vertical-align: baseline;
 
-        .social{
-          width: 50%;
-          border: 1px #000 solid;
-          display: table;
-          margin-left: -30px;
-          margin-right: -30px;
-          margin-bottom: 30px;
-          border-spacing: 30px 0;
-          border-collapse: separate;
-        }
+      .social{
+        border: 1px #f00 solid;
+        display: table-cell;
+      }
 
-        .net{width: auto;}
-
-        .blog{
-          border: 1px #0f0 solid;
-          vertical-align: top;
-          padding-right: 15px;
-          padding-bottom: 80px;
-          box-sizing: border-box;
-        }
-
-        .media{
-          border: 1px #0ff solid;
-          display: inline-block;
-          vertical-align: top;
-          padding-left: 15px;
-          margin-left: -5px;
-          box-sizing: border-box;
-        }
+      .blog{outline: 1px #000 solid;}
+      .media{outline: 1px #000 solid;}
 
 
 
-      } //social
-    } //section.sns close
+
+
+
+
+
+
+      } // sns close
+    } //section.socialnetwork close
 
     section.video{
       outline: 1px #f0f solid;
