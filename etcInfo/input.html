@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        .checkebox{
+            border:1px #F00 solid;
+            display:inline-block;
+            width:40px;
+            height:40px;
+            border-radius:5px;
+            position:relative;
+        }
+        .checkebox input{
+            position:absolute;
+            left:0;
+            top:50px;
+
+        }
+        .checkebox.checked span{
+            display:block;
+        }
+        .checkebox span{
+            display:none;
+            position:absolute;
+            top:5px;
+            left:5px;
+            right:5px;
+            bottom:5px;
+            background-color:#F00;
+            border-radius:5px;
+        }
+    </style>
+
+    <script>
+        $(function(){
+            $('.checkebox').click(function(){
+                $(this).toggleClass('checked');
+
+                var inputTarget = $(this).children('input');
+
+                if($(this).is('.checked')){
+
+                    inputTarget.prop('checked',true);
+
+                }else{
+
+                    inputTarget.prop('checked',false);
+                }
+            })
+
+           $('.all').click(function(){
+                console.log('a')
+                $('.checkebox').trigger('click')
+            })
+        })
+
+
+
+    </script>
+</head>
+<body>
+    <div>
+        <button class="all">전체선택</button>
+    </div>
+
+    <span class="checkebox radio">
+        <span></span>
+        <input type="checkbox" />
+    </span>
+    <span class="checkebox radio">
+        <span></span>
+        <input type="checkbox" />
+    </span>
+    <span class="checkebox radio">
+        <span></span>
+        <input type="checkbox" />
+    </span>
+    <span class="checkebox radio">
+        <span></span>
+        <input type="checkbox" />
+    </span>
+    <span class="checkebox radio">
+        <span></span>
+        <input type="checkbox" />
+    </span>
+
+
+
+</body>
+</html>

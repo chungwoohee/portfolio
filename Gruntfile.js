@@ -38,32 +38,17 @@ module.exports = function(grunt) {
             },
         },
     },
-    includes: {
-          files: {
-            src: ['path/to/foo.html', 'path/to/bar.html'], // Source files
-            dest: 'tmp', // Destination directory
-            flatten: true,
-            cwd: '.',
-            options: {
-              silent: true,
-              banner: '<!-- I am a banner <% includes.files.dest %> -->'
-            }
-          },
-          htmlhint: {
-      html1: {
-        options: {
-          'tag-pair': true
+    includes: { //복수로 여러개
+          dist:{
+              cwd:'html', //current working directory 현재경로,실제인클루드진행할파일위치
+              src:['*.html','includes/*.html'], //대상파일들
+              dest:'./dist', //destination 만들어진 파일이 들어갈 경로. 목적지
+              options:{
+                  flatten:true,
+                  includePath:'html/' //Indicates the path(s) to use when looking for included files.포함된 파일들 찾을때 사용할 경로.
+              }
+          }
         },
-        src: ['path/to/**/*.html']
-      },
-      html2: {
-        options: {
-          'tag-pair': true
-        },
-        src: ['path/to/**/*.html']
-      }
-}
-}
 
 });
 

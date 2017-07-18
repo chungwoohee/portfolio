@@ -45,7 +45,6 @@
       vertical-align: middle;
 
       .workshopTitle{
-        font-family: 'Noto Sans', sans-serif;
         color: #fff;
         font-size: 52px;
         width: 930px;
@@ -57,8 +56,8 @@
     .Btn{
       width: 160px;
       height: 60px;
-      color: @color-white;
-      background-color: @color-black;
+      color: #fff;
+      background-color: #000;
       border-radius: 2px;
       line-height: 60px;
       text-align: center;
@@ -76,7 +75,38 @@
       display: inline-block;
     }
 
-    .Btn{
+    .workshopBtn{
+      outline: 1px @color-main solid;
+      width: 129px;
+      height: 60px;
+      color: @color-fonthover;
+      border-radius: 2px;
+      line-height: 60px;
+      text-align: center;
+      font-size: .65em;
+      text-transform: uppercase;
+      display: inline-block;
+      position: absolute;
+      bottom: 30px;
+    }
+
+    .performBtn{
+      outline: 1px @color-main solid;
+      width: 129px;
+      height: 60px;
+      color: @color-fonthover;
+      background-color: @color-main;
+      border-radius: 2px;
+      line-height: 60px;
+      text-align: center;
+      font-size: .65em;
+      text-transform: uppercase;
+      display: inline-block;
+      position: absolute;
+      bottom: 30px;
+    }
+
+    .suportBtn{
       width: 129px;
       height: 60px;
       color: @color-white;
@@ -91,15 +121,46 @@
       bottom: 30px;
     }
 
-    .mny{
-    outline: 1px #f00 solid;
-    width: 46.7%;}
+    .rentBtn{
+      outline: 1px @color-main solid;
+      width: 129px;
+      height: 60px;
+      color: @color-fonthover;
+      border-radius: 2px;
+      line-height: 60px;
+      text-align: center;
+      font-size: .65em;
+      text-transform: uppercase;
+      display: inline-block;
+      position: absolute;
+      bottom: 30px;
+      left: 180px;
+    }
 
-    .rent{
-    } //Btn
-
-    .hall{
-      left: 179px;
-    } //Btn
+    .hallBtn{
+      width: 129px;
+      height: 60px;
+      color: @color-fonthover;
+      background-color: @color-main;
+      border-radius: 2px;
+      line-height: 60px;
+      text-align: center;
+      font-size: .65em;
+      text-transform: uppercase;
+      display: inline-block;
+      position: absolute;
+      bottom: 30px;
+    }
 
   } //news close
+
+  .footerwrap{
+    .emailBtn{
+        display: inline-block;
+        padding: 14px;
+        font-size: .65em;
+        width: 129px;
+        text-align: center;
+        border: 1px @color-white solid;
+    }
+  }

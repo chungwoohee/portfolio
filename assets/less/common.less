@@ -1,5 +1,4 @@
 
-@import url("//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css");
 @import url('https://fonts.googleapis.com/css?family=Cinzel'); //font-family: 'Cinzel',serif;
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans'); //font-family: 'Noto Sans', sans-serif;
 //@import url('https://fonts.googleapis.com/css?family=Cantarell'); font-family: 'Cantarell', sans-serif;
@@ -19,17 +18,14 @@
 @color-darkgold:#997d3f;
 @color-fonthover:#146348;
 @color-lemon:#ffff7d;
-@color-gray:#221f1f; //logo backgroung color
 
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0; text-decoration: none;}
-body{font-family: 'Nanum Gothic Coding', monospace;}
+body{font-family: 'Noto Sans', sans-serif;}
 ul,ol,li,tr,td{list-style: none;}
 a{text-decoration: none;}
 
 .wrap{
   width: 100%;
-
-  h1{font-family: 'Noto Sans', sans-serif;}
 
   .gnb{
 
@@ -107,9 +103,6 @@ a{text-decoration: none;}
 .contents{
 
   .subject{
-    //margin-top: 10px;
-    //border: 1px #00f solid;
-    font-family: 'Cinzel',serif;
     letter-spacing: -.01em;
     font-size: 1.6em;
     line-height: 1.6em;
@@ -127,9 +120,56 @@ a{text-decoration: none;}
     margin: 50px auto;
 
     .calendar{
-      height: 200px;
-      //outline: 1px @color-black solid;
+      //border: 1px #d9d9d9 solid;
+      box-sizing: border-box;
+      margin-top: 10px;
       margin-bottom: 50px;
+      overflow: hidden;
+
+      .timeline{
+        //border: 1px #0f0 solid;
+        display: table;
+
+          nav.monthNav{
+               display: table-cell;
+               box-sizing: border-box;
+
+             ul{
+               height: 23px;
+               font-size: 13px;
+               text-align: center;
+               float: left;
+               overflow: hidden;
+               margin-top: 10px;
+               border-left: 1px #d9d9d9 solid;
+               border-right: 1px #d9d9d9 solid;}
+            }
+
+          .months{
+            //outline: 1px #ff0 solid;
+            display: table-cell;
+            box-sizing: border-box;
+            width: 50%;
+
+            .month{
+              li{
+                float: left;
+                font-size: 11px;
+                .day{
+                  //outline: 1px #00f solid;
+                  display: block;
+                  text-align: center;
+                  width: 2.4em;
+                }
+                .weekday{
+                  //outline: 1px #f00 solid;
+                  width: 2.4em;
+                  text-align: center;
+                }
+              }//li close
+            } //month close
+          } //month close
+      }
     }
 
     .box{
@@ -137,7 +177,6 @@ a{text-decoration: none;}
       width: 100%;
       top: 0;
       margin: 0;
-      font-family: 'Noto Sans', sans-serif;
 
       img{
         width: 100%;
@@ -232,12 +271,13 @@ a{text-decoration: none;}
       margin: 50px auto;
       display: block;
 
+      h1{padding-bottom: 10px;}
+
       .sns{
         display: table;
         width: 100%;
         top: 0;
         margin: 0;
-        font-family: 'Noto Sans', sans-serif;
 
       .social{
         //border: 1px #f00 solid;
@@ -245,7 +285,7 @@ a{text-decoration: none;}
         position: relative;
         vertical-align: top;
 
-        .firstline{border: 1px #000 solid; display: table;}
+        .firstline{display: table;}
 
         .nextBtn{outline: 1px #f0f solid; width: 1.6em; display: table-cell;}
 
@@ -264,12 +304,12 @@ a{text-decoration: none;}
     } //section.socialnetwork close
 
     section.video{
-      outline: 1px #f0f solid;
+
       max-width: 95%;
       margin: 50px auto;
 
       .Btn{
-        width: 129px;
+        width: 160px;
         height: 60px;
         color: #fff;
         background-color: #000;
@@ -279,18 +319,14 @@ a{text-decoration: none;}
         font-size: .65em;
         text-transform: uppercase;
         display: inline-block;
-        position: absolute;
-        bottom: 30px;
+        float: right;
       }
-
-        .videowrap{
-          height: 200px;
-
-          .nextBtn{
-            width: 1.6em;
-          }
-
-        } //videowrap close
+      .youtubebg{
+        border: 1px #f00 solid;
+        margin-top: 10px;
+        height: 200px;
+        border: 1px #d9d9d9 solid;
+      }
 
 
     } //section.video close
@@ -301,7 +337,6 @@ a{text-decoration: none;}
     height: 329px;
     background: @color-black;
     margin-top: 200px;
-    font-family: 'Noto Sans', sans-serif;
     text-transform: uppercase;
     font-size: 11px;
 
@@ -345,14 +380,6 @@ a{text-decoration: none;}
         .master{font-size: 10px;}
         .local{line-height: 11px; margin-top: 10px;}
         .num{line-height: 11px; margin-top: 30px;}
-        .email{
-          padding: 14px;
-          font-size: .65em;
-          width: 129px;
-          text-align: center;
-          border: 1px @color-white solid;
-            a{color: @color-white;}
-        }
 
       .fallow .snsBtngroup{
         margin-top: 26px;

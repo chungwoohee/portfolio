@@ -54,12 +54,11 @@
            height:540px;
            margin:auto;
            position:relative;
-
        }
        .controller-btn-group{
            position:absolute;
            width:100%;
-           border:1px #F00 solid;
+
            top:50%;
        }
        .controller-btn-group button{
@@ -79,6 +78,7 @@
            background-image: url(http://static.naver.net/newsstand/img/20121231/bg_panel.png);
            padding:0 18px;
            background-repeat: no-repeat;
+           background-position: center 0;
        }
 
        .news header{
@@ -105,10 +105,137 @@
        }
 
 
+       @media screen and (max-width:1000px) {
+           section .left,
+             section .right{display:block !important;}
+           .wrapper{
+               width:700px;
+           }
+           .news{
+               width:auto;
+           }
+       }
+
+       @media screen and (max-width:800px) {
+           .wrapper{
+               width:500px;
+           }
+           .news{
+               width:auto;
+           }
+           header{
+               outline:1px #00F solid;
+           }
+       }
+
+
+       @media print{
+
+       body{
+           background-image: none;
+       }
+       header.layout{
+           height:auto;
+
+           background-image: url(http://static.naver.net/newsstand/img/20121231/bg_hd.png);
+           background-repeat:repeat-x;
+           background:none;
+       }
+       header .newslogan{width:100px;height:50px; float:left;}
+       header .site_option{width:100px;height:50px; float:right;}
+       header .section_menu{}
+
+       .wrapper{
+           width:auto;
+           height:auto;
+           margin:auto;
+           position:relative;
+       }
+       .controller-btn-group{
+           position:absolute;
+           width:auto;
+           border:1px #F00 solid;
+           top:50%;
+       }
+       .controller-btn-group button{
+           position:absolute;
+           top:-22px;
+       }
+       .controller-btn-group .icon-big-arrowL{
+           right:-22px;
+       }
+       .controller-btn-group .icon-big-arrowR{
+           left:-22px;
+       }
+       .news{
+           width:auto;
+           height:inherit;
+           border:none;
+           background-image: url(http://static.naver.net/newsstand/img/20121231/bg_panel.png);
+           padding:0 18px;
+           background-repeat: no-repeat;
+           background-position: center 0;
+
+       }
+
+       .news header{
+           height:111px;
+           outline:none;
+           margin-bottom:20px;
+       }
+       .news section{
+           height:380px;
+           outline:none
+       }
+
+       section.layout{
+           border:none;
+           min-height:500px;
+       }
+       footer{
+           background: #000;
+           border:1px #F00 solid;
+           position:absolute;
+           width:100%;
+           bottom:0;
+           height:81px;
+       }
+
+
+       }
+
+       section>div{
+           display:table;
+            border-spacing: 30px;
+       }
+       section .left,
+       section .right{
+          border:1px #f00 solid;
+          display:table-cell;
+          border-spacing: 10px;
+       }
+
+       section .left{
+           width:200px;
+       }
+
+       section .right span{
+           /*border:1px #F00 solid;*/
+           font-size:16px;
+           line-height:16px;
+       }
+       section .right{
+           padding:7px 10px 9px;
+       }
+
+
+
+
     </style>
 
 </head>
-<body>
+
+<body id="">
 
     <header class="layout">
         <div class="newslogan">
@@ -142,14 +269,17 @@
             <div class="news">
 
                 <header>
+                   <h1>일간스포츠</h1>
+                </heade 0
 
-                </header>
+                0
+                0.................00000........................................................................................................................................................................................r>
 
                 <section>
-                    <a href="https://preview.c9users.io/kimminchul/sd-study/news_renew/daily.html?id=3"></a>
-                    <h2></h2>
-                    <p></p>
-
+                  <div>
+                        <div class="left"></div>
+                        <div class="right"><span>Hello world 안녕하세요  20px;</span> </div>
+                  </div>
                 </section>
 
 
