@@ -19,14 +19,13 @@
 @color-darkgold:#997d3f;
 @color-fonthover:#146348;
 @color-lemon:#ffff7d;
+@color-sun:#c60909;
 
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0; text-decoration: none;}
 body{font-family: 'Noto Sans', sans-serif;}
 ul,ol,li,tr,td{list-style: none;}
 a{text-decoration: none;}
 
-.wrap{
-  width: 100%;
 
   .gnb{
 
@@ -123,92 +122,14 @@ a{text-decoration: none;}
 
 
   section.news{
-    .subject:first-child{
-      padding-left: 30px;
-      padding-bottom: 10px;
-      margin-top: 50px;
-    }
-    .calendar{
-      //border: 1px #d9d9d9 solid;
-      font-family: 'Libre Baskerville', serif;
-      box-sizing: border-box;
-      margin: 30px 0;
-      overflow: hidden;
-
-      .timeline{
-        //border: 1px #0f0 solid;
-
-          .year{
-            height: 38px;
-            display: table-cell;
-            font-size: 3.7em;
-            font-weight: lighter;
-            box-sizing: border-box;
-            //overflow: hidden;
-          }
-
-          nav.monthNav{
-               display: table-cell;
-               box-sizing: border-box;
-
-             ul{
-               height: 38px;
-               //width: 48px;
-               font-size: 13px;
-               text-align: center;
-               float: left;
-               overflow: hidden;
-               //border-left: 1px #d9d9d9 solid;
-               //border-right: 1px #d9d9d9 solid;
-             }
-
-             .no{
-               //outline: 1px #ff0 solid;
-               font-size: 34px;}
-             .eng{
-               //outline: 1px #f0f solid;
-               font-size: 12px;}
-
-
-            }//monthNav close
-
-          .months{
-            //outline: 1px #ff0 solid;
-            display: table-cell;
-            box-sizing: border-box;
-            width: 50%;
-
-            .month{
-              height: 30px;
-              overflow: hidden;
-
-              li{
-                float: left;
-                font-size: .8em;
-
-                .day{
-                  //outline: 1px #00f solid;
-                  display: block;
-                  text-align: center;
-                  width: 2.457em;
-                  font-weight: 600;
-                }
-                .weekday{
-                  //outline: 1px #f00 solid;
-                  width: 2.4em;
-                  text-align: center;
-                }
-              }//li close
-            } //month close
-          } //month close
-      }
-    } //calendar close
 
     .box{
       display: block;
       width: 100%;
       top: 0;
       margin: 0;
+
+      .subject:first-child{padding-left: 30px; margin-bottom: 10px;}
 
       img{
         width: 100%;
@@ -333,19 +254,6 @@ a{text-decoration: none;}
       //max-width: 90%;
       margin: 100px auto;
 
-      .Btn{
-        width: 160px;
-        height: 60px;
-        color: #fff;
-        background-color: #000;
-        border-radius: 2px;
-        line-height: 60px;
-        text-align: center;
-        font-size: .65em;
-        text-transform: uppercase;
-        display: inline-block;
-        float: right;
-      }
       .youtubebg{
         border: 1px #f00 solid;
         margin-top: 10px;
@@ -370,13 +278,14 @@ a{text-decoration: none;}
 
     .footerwrap{
       height: 176px;
+      display: table;
 
       .container>div{
+        display: table-cell;
         width: 240px;
-        height: 73px;
         float: left;
         margin-top: 20px;
-        margin: 45px 15px 0 0;
+        margin: 50px 15px 0 0;
         line-height: 20px;
       }
 
@@ -411,6 +320,15 @@ a{text-decoration: none;}
           svg{width: 25px;}
         }
       }
+      .lastBtn{
+        display: inline-flex;
+
+        .email{
+          margin: 0px 50px;
+          margin-left: 150px;
+        }
+      }
+
       } // container close
     } //footerwrap close
 
@@ -439,11 +357,3 @@ a{text-decoration: none;}
 
 
   } //footer close
-
-
-
-
-
-
-
-} //wrap close

@@ -37,15 +37,23 @@ module.exports = function(grunt) {
             spawn: false,
             },
         },
+        watchIncludes: {
+            files: ['html/*.html'],
+            tasks: ['includes'],
+            options: {
+            spawn: false,
+            },
+        },
     },
+
     includes: { //복수로 여러개
           dist:{
               cwd:'html', //current working directory 현재경로,실제인클루드진행할파일위치
-              src:['*.html','includes/*.html'], //대상파일들
+              src:['*.html','**/*.html'], //대상파일들
               dest:'./dist', //destination 만들어진 파일이 들어갈 경로. 목적지
               options:{
                   flatten:true,
-                  includePath:'html/' //Indicates the path(s) to use when looking for included files.포함된 파일들 찾을때 사용할 경로.
+                  includePath:'html/includes/' //Indicates the path(s) to use when looking for included files.포함된 파일들 찾을때 사용할 경로.
               }
           }
         },

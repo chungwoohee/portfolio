@@ -1,11 +1,8 @@
   .main{
     font-family: 'Noto Sans', sans-serif;
     overflow: hidden;
-    //width: 1200px;
-    //height: 650px;
     background: url(../../image/pic/main.png);
     background-size: cover;
-    //margin: 0 auto;
     margin-top: 54px;
     position: relative;
 
@@ -126,6 +123,7 @@
       width: 129px;
       height: 60px;
       color: @color-main;
+
       border-radius: 2px;
       line-height: 60px;
       text-align: center;
@@ -154,13 +152,31 @@
 
   } //news close
 
-  .footerwrap{
-    .emailBtn{
-        display: inline-block;
-        padding: 14px;
-        font-size: .65em;
-        width: 129px;
-        text-align: center;
-        border: 1px @color-white solid;
+  section.video{
+    .Btn{
+      border: 1px #000 solid;
+      width: 160px;
+      height: 60px;
+      color: #000;
+      border-radius: 2px;
+      line-height: 60px;
+      text-align: center;
+      font-size: .65em;
+      text-transform: uppercase;
+      display: inline-block;
+      float: right;
     }
+  }
+
+  .footerwrap{
+
+      .Btn{
+          display: inline-block;
+          padding: 14px;
+          font-size: .65em;
+          width: 129px;
+          text-align: center;
+          border: 1px @color-white solid;
+      }
+
   }
