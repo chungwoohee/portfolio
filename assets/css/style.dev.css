@@ -633,3 +633,7 @@ section.news .hallBtn:hover span {
 .footerwrap .Btn:hover span {
   color: #000 !important;
 }
+/* line 2, assets\less\piscis.less */
+.intro {
+  border: 1px #f00 solid;
+}
