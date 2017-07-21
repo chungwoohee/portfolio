@@ -38,7 +38,7 @@ module.exports = function(grunt) {
             },
         },
         watchIncludes: {
-            files: ['html/*.html'],
+            files: ['html/*.html','html/includes/*.html'],
             tasks: ['includes'],
             options: {
             spawn: false,
