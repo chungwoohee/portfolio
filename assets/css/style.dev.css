@@ -344,15 +344,15 @@ a {
   margin-bottom: 30px;
   border-collapse: separate;
 }
-/* line 154, assets/less/common.less */
+/* line 152, assets/less/common.less */
 .contents .secondcontents section.news .box .lowbox .paragraph {
   padding: 30px;
 }
-/* line 157, assets/less/common.less */
+/* line 155, assets/less/common.less */
 .contents .secondcontents section.news .box .lowbox .paragraph .inner {
   font-size: 12px;
 }
-/* line 161, assets/less/common.less */
+/* line 159, assets/less/common.less */
 .contents .secondcontents section.news .box .lowbox .paragraph .title {
   font-weight: 700;
   text-transform: uppercase;
@@ -360,7 +360,7 @@ a {
   line-height: 1em;
   padding-bottom: 10px;
 }
-/* line 172, assets/less/common.less */
+/* line 170, assets/less/common.less */
 .contents .secondcontents section.news .box .topic {
   display: table-cell;
   border-bottom: 1px #d9d9d9 solid;
@@ -370,20 +370,20 @@ a {
   vertical-align: top;
   padding-bottom: 80px;
 }
-/* line 182, assets/less/common.less */
+/* line 180, assets/less/common.less */
 .contents .secondcontents section.news .box .lastbox {
   border: 1px #d9d9d9 solid;
 }
-/* line 186, assets/less/common.less */
+/* line 184, assets/less/common.less */
 .contents .secondcontents section.news .box .first {
   width: 67.4%;
 }
-/* line 190, assets/less/common.less */
+/* line 188, assets/less/common.less */
 .contents .secondcontents section.news .box .first .bucket {
   width: 50%;
   display: inline-block;
 }
-/* line 197, assets/less/common.less */
+/* line 195, assets/less/common.less */
 .contents .secondcontents section.news .box .first .inner {
   width: 50%;
   display: inline-block;
@@ -392,185 +392,184 @@ a {
   margin-left: -5px;
   box-sizing: border-box;
 }
-/* line 208, assets/less/common.less */
+/* line 206, assets/less/common.less */
 .contents .secondcontents section.news .box .second {
   width: 32.6%;
 }
-/* line 211, assets/less/common.less */
+/* line 209, assets/less/common.less */
 .contents .secondcontents section.news .box .second .inner {
   padding-top: 10px;
 }
-/* line 221, assets/less/common.less */
+/* line 219, assets/less/common.less */
 .contents .secondcontents section.socialnetwork {
   margin-top: 50px;
 }
-/* line 224, assets/less/common.less */
+/* line 222, assets/less/common.less */
 .contents .secondcontents section.socialnetwork h1 {
   padding-bottom: 10px;
 }
-/* line 226, assets/less/common.less */
+/* line 224, assets/less/common.less */
 .contents .secondcontents section.socialnetwork .sns {
   display: table;
   width: 100%;
   top: 0;
   margin: 0;
 }
-/* line 232, assets/less/common.less */
+/* line 230, assets/less/common.less */
 .contents .secondcontents section.socialnetwork .sns .social {
   display: table-cell;
 }
-/* line 235, assets/less/common.less */
+/* line 233, assets/less/common.less */
 .contents .secondcontents section.socialnetwork .sns .social .nextBtn {
   outline: 1px #f0f solid;
   width: 1.6em;
   display: table-cell;
 }
-/* line 237, assets/less/common.less */
+/* line 235, assets/less/common.less */
 .contents .secondcontents section.socialnetwork .sns .social .api {
   border: 1px #d9d9d9 solid;
   height: 400px;
 }
-/* line 252, assets/less/common.less */
+/* line 250, assets/less/common.less */
 .contents section.video {
   margin: 100px auto;
 }
-/* line 257, assets/less/common.less */
+/* line 255, assets/less/common.less */
 .contents section.video .youtubebg {
   border: 1px #f00 solid;
   margin-top: 10px;
   height: 200px;
   border: 1px #d9d9d9 solid;
 }
-/* line 269, assets/less/common.less */
+/* line 267, assets/less/common.less */
 .footer {
-  height: 329px;
   background: #000;
   text-transform: uppercase;
   font-size: 11px;
 }
-/* line 275, assets/less/common.less */
+/* line 272, assets/less/common.less */
 .footer .footerstart {
-  padding: 0 30px;
+  padding-left: 30px;
+  border-spacing: 0 30px;
 }
-/* line 279, assets/less/common.less */
+/* line 277, assets/less/common.less */
 .footer .footerwrap {
   height: 176px;
   display: table;
 }
-/* line 283, assets/less/common.less */
+/* line 281, assets/less/common.less */
 .footer .footerwrap .container > div {
   display: table-cell;
-  width: 240px;
   float: left;
   margin-top: 20px;
   margin: 50px 15px 0 0;
   line-height: 20px;
 }
-/* line 292, assets/less/common.less */
+/* line 289, assets/less/common.less */
 .footer .footerwrap .container p {
   color: #757474;
   font-size: 9px;
 }
-/* line 297, assets/less/common.less */
+/* line 294, assets/less/common.less */
 .footer .footerwrap .container {
   width: 100%;
 }
-/* line 300, assets/less/common.less */
+/* line 297, assets/less/common.less */
 .footer .footerwrap .container .info {
   width: 349px;
 }
-/* line 302, assets/less/common.less */
+/* line 299, assets/less/common.less */
 .footer .footerwrap .container span {
   display: inline-block;
   color: #fff;
   text-transform: uppercase;
   font-weight: normal;
 }
-/* line 309, assets/less/common.less */
+/* line 306, assets/less/common.less */
 .footer .footerwrap .container .name {
   color: #fff;
 }
-/* line 311, assets/less/common.less */
+/* line 308, assets/less/common.less */
 .footer .footerwrap .container .pis {
   padding-right: 5px;
   border-right: 1px #ccc solid;
   line-height: 8px;
 }
-/* line 312, assets/less/common.less */
+/* line 309, assets/less/common.less */
 .footer .footerwrap .container .lab {
   padding-left: 5px;
 }
-/* line 313, assets/less/common.less */
+/* line 310, assets/less/common.less */
 .footer .footerwrap .container .master {
   font-size: 10px;
 }
-/* line 314, assets/less/common.less */
+/* line 311, assets/less/common.less */
 .footer .footerwrap .container .local {
   line-height: 11px;
   margin-top: 10px;
 }
-/* line 315, assets/less/common.less */
+/* line 312, assets/less/common.less */
 .footer .footerwrap .container .num {
   line-height: 11px;
   margin-top: 30px;
 }
-/* line 317, assets/less/common.less */
+/* line 314, assets/less/common.less */
 .footer .footerwrap .container .fallow .snsBtngroup {
   margin-top: 26px;
 }
-/* line 319, assets/less/common.less */
+/* line 316, assets/less/common.less */
 .footer .footerwrap .container .fallow .snsBtngroup a {
   margin: 0 10px 0 0;
 }
-/* line 320, assets/less/common.less */
+/* line 317, assets/less/common.less */
 .footer .footerwrap .container .fallow .snsBtngroup a svg {
   width: 25px;
 }
-/* line 323, assets/less/common.less */
+/* line 320, assets/less/common.less */
 .footer .footerwrap .container .lastBtn {
   display: inline-flex;
 }
-/* line 326, assets/less/common.less */
+/* line 323, assets/less/common.less */
 .footer .footerwrap .container .lastBtn .email {
-  margin: 0px 40px;
-  margin-left: 150px;
+  float: right;
+  margin: 0px 30px;
 }
-/* line 335, assets/less/common.less */
+/* line 332, assets/less/common.less */
 .footer .notice {
   margin-bottom: 44px;
 }
-/* line 338, assets/less/common.less */
+/* line 335, assets/less/common.less */
 .footer .notice span {
   display: block;
   color: #fff;
   font-size: 10px;
   color: #757474;
 }
-/* line 346, assets/less/common.less */
+/* line 343, assets/less/common.less */
 .footer .end {
   border-top: 1px #262626 solid;
 }
-/* line 349, assets/less/common.less */
+/* line 346, assets/less/common.less */
 .footer .end ul {
   height: 80px;
   line-height: 80px;
 }
-/* line 350, assets/less/common.less */
+/* line 347, assets/less/common.less */
 .footer .end ul li {
   color: #757474;
   float: left;
   font-size: 13px;
   margin: 0 30px;
 }
-/* line 351, assets/less/common.less */
+/* line 348, assets/less/common.less */
 .footer .end ul li a {
   color: #757474;
 }
-/* line 353, assets/less/common.less */
+/* line 350, assets/less/common.less */
 .footer .end ul .marginfix {
   margin: 0;
 }
-/* line 354, assets/less/common.less */
+/* line 351, assets/less/common.less */
 .footer .end ul .fr {
   float: right;
 }
