@@ -4,6 +4,7 @@ $(function () {
   var $icon = $('.header a')
   var $end = $('.end li')
   var $snsBtngroup = $('.snsBtngroup')
+  var $click = $('.slidemenu>ul>li')
 
   $menu.on({
     "mouseenter":function(){
@@ -58,7 +59,7 @@ $(function () {
     "mouseleave":function(){
       $(this).find('.mark').css({'fill':'','transition':'1s'})
     }
-  })
+  }),
 
 
 
@@ -66,18 +67,15 @@ $(function () {
       $('.slidemenu>ul>li').find('.sl').stop().slideDown();
     },function(){
       $('.slidemenu>ul>li').find('.sl').stop().slideUp();
-    })
+    }),
 
 
-/*
-    $('.menuBtn').hover(function(e){
-      e.preventDefault();
-      console.log(e);
-      $('.menu').find('.sl').stop().slideDown();
-    },function(){
-      $('.menu').find('.sl').stop().slideUp();
-    })
-*/
+    $click.on({
+      "click":function(){
+        $(this).find('.sl').stop().slideUp();
+      }
+    })  //글씨 사라지는것 수정할것.
+
 
 
 })
