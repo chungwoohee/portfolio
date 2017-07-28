@@ -5,24 +5,77 @@
   max-width: 1600px;
   margin: 0 auto;
 
+  .innersec{min-height: 600px;}
+
   .sub_nav{
     outline: 1px #f0f solid;
     width: 220px;
     position: fixed;
     top: 0;
-    padding: 40px;
     backface-visibility: hidden;
-  }
+    z-index: -1;
+
+    .sublogo{width: 220px;
+      img{width: 100%}
+    }
+
+    nav{
+      text-align: center;
+      text-transform: uppercase;
+      li{padding-top: 10px;}
+      a{color: #000;}
+    }// nav close
+
+
+  } // sub_nav close
+
   .mainContent{
-    outline: 1px #00f solid;
+    outline: 1px #f00 solid;
     margin-left: 220px;
-    padding-top: 40px;
-    padding-right: 40px;
+    min-height: calc(100vh - 250px);
+
+    header{
+      //position: relative;
+      .bannerImg{
+        background: url(../../image/pic/main.png);
+        height: 350px;
+        background-size: cover;
+      }
+      .calendarBtn{
+        display: inline-block;
+        padding: 14px;
+        font-size: .65em;
+        width: 129px;
+        text-align: center;
+        border: 1px @color-white solid;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        a{color: #fff;}
+      }
+    } //header close
+
+    .introduction{max-width: 900px;}
 
     .about_piscis{
-      max-width: 878px;
+      .name{
+        font-size: 30px;
+        font-family: 'Libre Baskerville', serif;
+        text-transform: uppercase;
+        letter-spacing: .35em;
+      }
+    } //about_piscis close
+
+    .sub{
+      border: 1px #00f solid;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 15px !important;
+      padding-top: 10px;
     }
-  }
+
+
+
+  } //mainContent close
 
 
 

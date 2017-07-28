@@ -175,7 +175,7 @@ section.video .Btn {
   text-align: center;
   border: 1px #fff solid;
 }
-/* line 24, assets/less/common.less */
+/* line 25, assets/less/common.less */
 body,
 html,
 h1,
@@ -193,11 +193,11 @@ p {
   padding: 0;
   text-decoration: none;
 }
-/* line 25, assets/less/common.less */
+/* line 26, assets/less/common.less */
 body {
   font-family: 'Noto Sans', sans-serif;
 }
-/* line 26, assets/less/common.less */
+/* line 27, assets/less/common.less */
 ul,
 ol,
 li,
@@ -205,21 +205,21 @@ tr,
 td {
   list-style: none;
 }
-/* line 27, assets/less/common.less */
+/* line 28, assets/less/common.less */
 a {
   text-decoration: none;
 }
-/* line 32, assets/less/common.less */
+/* line 33, assets/less/common.less */
 .gnb .header {
   height: 100px;
   background: #000;
   border-bottom: 1px #262626 solid;
 }
-/* line 37, assets/less/common.less */
+/* line 38, assets/less/common.less */
 .gnb .header h1 {
   text-align: center;
 }
-/* line 39, assets/less/common.less */
+/* line 40, assets/less/common.less */
 .gnb .header .logo {
   font-family: 'Cinzel', serif;
   color: #fff;
@@ -227,20 +227,20 @@ a {
   font-weight: lighter;
   letter-spacing: .25em;
 }
-/* line 47, assets/less/common.less */
+/* line 48, assets/less/common.less */
 .gnb .header .menuBtn {
   position: relative;
   top: 19px;
   left: 19px;
 }
-/* line 53, assets/less/common.less */
+/* line 54, assets/less/common.less */
 .gnb .header .searchBtn {
   float: right;
   position: relative;
   top: -45px;
   right: 19px;
 }
-/* line 61, assets/less/common.less */
+/* line 62, assets/less/common.less */
 .gnb .menu {
   height: 50px;
   background-color: rgba(0, 0, 0, 0.9);
@@ -251,108 +251,108 @@ a {
   z-index: 9999;
   overflow: hidden;
 }
-/* line 71, assets/less/common.less */
+/* line 72, assets/less/common.less */
 .gnb .menu .slidemenu {
   background-color: #000;
   height: 54px;
 }
-/* line 74, assets/less/common.less */
+/* line 75, assets/less/common.less */
 .gnb .menu .slidemenu a {
   color: #999;
   font-size: 13px;
   display: inline-block;
 }
-/* line 79, assets/less/common.less */
+/* line 80, assets/less/common.less */
 .gnb .menu .slidemenu .en {
   letter-spacing: 0.18em;
 }
-/* line 81, assets/less/common.less */
+/* line 82, assets/less/common.less */
 .gnb .menu .slidemenu > ul {
   text-align: center;
   line-height: 50px;
 }
-/* line 84, assets/less/common.less */
+/* line 85, assets/less/common.less */
 .gnb .menu .slidemenu > ul > li {
   display: block;
   float: left;
   width: 12.5%;
 }
-/* line 92, assets/less/common.less */
+/* line 93, assets/less/common.less */
 .gnb .menu .sl {
   display: none;
   height: 600px;
   position: relative;
 }
-/* line 96, assets/less/common.less */
+/* line 97, assets/less/common.less */
 .gnb .menu .sl ul li {
   padding-top: 10px;
   line-height: 35px;
 }
-/* line 97, assets/less/common.less */
+/* line 98, assets/less/common.less */
 .gnb .menu .sl li > a {
   font-size: 13px;
   width: 100%;
   height: 100%;
 }
-/* line 105, assets/less/common.less */
+/* line 106, assets/less/common.less */
 .contents .subject {
   letter-spacing: -0.01em;
   font-size: 1.6em;
   line-height: 1.6em;
   text-transform: uppercase;
 }
-/* line 112, assets/less/common.less */
+/* line 113, assets/less/common.less */
 .contents section.main {
   height: 600px;
   background-color: #f2f2f2;
   text-align: center;
 }
-/* line 118, assets/less/common.less */
+/* line 119, assets/less/common.less */
 .contents .secondcontents {
   max-width: 90%;
   margin: 50px auto;
   border-spacing: 30px 0;
 }
-/* line 126, assets/less/common.less */
+/* line 127, assets/less/common.less */
 .contents .secondcontents section.news .box {
   display: block;
   width: 100%;
   top: 0;
   margin: 0;
 }
-/* line 132, assets/less/common.less */
+/* line 133, assets/less/common.less */
 .contents .secondcontents section.news .box .subject:first-child {
   padding-left: 30px;
   margin-bottom: 10px;
 }
-/* line 134, assets/less/common.less */
+/* line 135, assets/less/common.less */
 .contents .secondcontents section.news .box img {
   width: 100%;
   display: block;
 }
-/* line 139, assets/less/common.less */
+/* line 140, assets/less/common.less */
 .contents .secondcontents section.news .box .lowbox img {
   border: 0;
   outline: 0;
   font-size: 100%;
   height: auto;
 }
-/* line 146, assets/less/common.less */
+/* line 147, assets/less/common.less */
 .contents .secondcontents section.news .box .lowbox {
   display: table;
   width: auto;
   margin-bottom: 30px;
   border-collapse: separate;
 }
-/* line 152, assets/less/common.less */
+/* line 153, assets/less/common.less */
 .contents .secondcontents section.news .box .lowbox .paragraph {
   padding: 30px;
 }
-/* line 155, assets/less/common.less */
+/* line 156, assets/less/common.less */
 .contents .secondcontents section.news .box .lowbox .paragraph .inner {
   font-size: 12px;
 }
-/* line 159, assets/less/common.less */
+/* line 160, assets/less/common.less */
 .contents .secondcontents section.news .box .lowbox .paragraph .title {
   font-weight: 700;
   text-transform: uppercase;
@@ -360,7 +360,7 @@ a {
   line-height: 1em;
   padding-bottom: 10px;
 }
-/* line 170, assets/less/common.less */
+/* line 171, assets/less/common.less */
 .contents .secondcontents section.news .box .topic {
   display: table-cell;
   border-bottom: 1px #d9d9d9 solid;
@@ -370,20 +370,20 @@ a {
   vertical-align: top;
   padding-bottom: 80px;
 }
-/* line 180, assets/less/common.less */
+/* line 181, assets/less/common.less */
 .contents .secondcontents section.news .box .lastbox {
   border: 1px #d9d9d9 solid;
 }
-/* line 184, assets/less/common.less */
+/* line 185, assets/less/common.less */
 .contents .secondcontents section.news .box .first {
   width: 67.4%;
 }
-/* line 188, assets/less/common.less */
+/* line 189, assets/less/common.less */
 .contents .secondcontents section.news .box .first .bucket {
   width: 50%;
   display: inline-block;
 }
-/* line 195, assets/less/common.less */
+/* line 196, assets/less/common.less */
 .contents .secondcontents section.news .box .first .inner {
   width: 50%;
   display: inline-block;
@@ -392,72 +392,73 @@ a {
   margin-left: -5px;
   box-sizing: border-box;
 }
-/* line 206, assets/less/common.less */
+/* line 207, assets/less/common.less */
 .contents .secondcontents section.news .box .second {
   width: 32.6%;
 }
-/* line 209, assets/less/common.less */
+/* line 210, assets/less/common.less */
 .contents .secondcontents section.news .box .second .inner {
   padding-top: 10px;
 }
-/* line 219, assets/less/common.less */
+/* line 220, assets/less/common.less */
 .contents .secondcontents section.socialnetwork {
   margin-top: 50px;
 }
-/* line 222, assets/less/common.less */
+/* line 223, assets/less/common.less */
 .contents .secondcontents section.socialnetwork h1 {
   padding-bottom: 10px;
 }
-/* line 224, assets/less/common.less */
+/* line 225, assets/less/common.less */
 .contents .secondcontents section.socialnetwork .sns {
   display: table;
   width: 100%;
   top: 0;
   margin: 0;
 }
-/* line 230, assets/less/common.less */
+/* line 231, assets/less/common.less */
 .contents .secondcontents section.socialnetwork .sns .social {
   display: table-cell;
 }
-/* line 233, assets/less/common.less */
+/* line 234, assets/less/common.less */
 .contents .secondcontents section.socialnetwork .sns .social .nextBtn {
   outline: 1px #f0f solid;
   width: 1.6em;
   display: table-cell;
 }
-/* line 235, assets/less/common.less */
+/* line 236, assets/less/common.less */
 .contents .secondcontents section.socialnetwork .sns .social .api {
   border: 1px #d9d9d9 solid;
   height: 400px;
 }
-/* line 250, assets/less/common.less */
+/* line 251, assets/less/common.less */
 .contents section.video {
   margin: 100px auto;
 }
-/* line 255, assets/less/common.less */
+/* line 256, assets/less/common.less */
 .contents section.video .youtubebg {
   border: 1px #f00 solid;
   margin-top: 10px;
   height: 200px;
   border: 1px #d9d9d9 solid;
 }
-/* line 267, assets/less/common.less */
+/* line 268, assets/less/common.less */
 .footer {
   background: #000;
   text-transform: uppercase;
   font-size: 11px;
+  z-index: 1;
 }
-/* line 272, assets/less/common.less */
+/* line 274, assets/less/common.less */
 .footer .footerstart {
   padding-left: 30px;
   border-spacing: 0 30px;
 }
-/* line 277, assets/less/common.less */
+/* line 279, assets/less/common.less */
 .footer .footerwrap {
   height: 176px;
   display: table;
 }
-/* line 281, assets/less/common.less */
+/* line 283, assets/less/common.less */
 .footer .footerwrap .container > div {
   display: table-cell;
   float: left;
@@ -465,111 +466,111 @@ a {
   margin: 50px 15px 0 0;
   line-height: 20px;
 }
-/* line 289, assets/less/common.less */
+/* line 291, assets/less/common.less */
 .footer .footerwrap .container p {
   color: #757474;
   font-size: 9px;
 }
-/* line 294, assets/less/common.less */
+/* line 296, assets/less/common.less */
 .footer .footerwrap .container {
   width: 100%;
 }
-/* line 297, assets/less/common.less */
+/* line 299, assets/less/common.less */
 .footer .footerwrap .container .info {
   width: 349px;
 }
-/* line 299, assets/less/common.less */
+/* line 301, assets/less/common.less */
 .footer .footerwrap .container span {
   display: inline-block;
   color: #fff;
   text-transform: uppercase;
   font-weight: normal;
 }
-/* line 306, assets/less/common.less */
+/* line 308, assets/less/common.less */
 .footer .footerwrap .container .name {
   color: #fff;
 }
-/* line 308, assets/less/common.less */
+/* line 310, assets/less/common.less */
 .footer .footerwrap .container .pis {
   padding-right: 5px;
   border-right: 1px #ccc solid;
   line-height: 8px;
 }
-/* line 309, assets/less/common.less */
+/* line 311, assets/less/common.less */
 .footer .footerwrap .container .lab {
   padding-left: 5px;
 }
-/* line 310, assets/less/common.less */
+/* line 312, assets/less/common.less */
 .footer .footerwrap .container .master {
   font-size: 10px;
 }
-/* line 311, assets/less/common.less */
+/* line 313, assets/less/common.less */
 .footer .footerwrap .container .local {
   line-height: 11px;
   margin-top: 10px;
 }
-/* line 312, assets/less/common.less */
+/* line 314, assets/less/common.less */
 .footer .footerwrap .container .num {
   line-height: 11px;
   margin-top: 30px;
 }
-/* line 314, assets/less/common.less */
+/* line 316, assets/less/common.less */
 .footer .footerwrap .container .fallow .snsBtngroup {
   margin-top: 26px;
 }
-/* line 316, assets/less/common.less */
+/* line 318, assets/less/common.less */
 .footer .footerwrap .container .fallow .snsBtngroup a {
   margin: 0 10px 0 0;
 }
-/* line 317, assets/less/common.less */
+/* line 319, assets/less/common.less */
 .footer .footerwrap .container .fallow .snsBtngroup a svg {
   width: 25px;
 }
-/* line 320, assets/less/common.less */
+/* line 322, assets/less/common.less */
 .footer .footerwrap .container .lastBtn {
   display: inline-flex;
 }
-/* line 323, assets/less/common.less */
+/* line 325, assets/less/common.less */
 .footer .footerwrap .container .lastBtn .email {
   float: right;
   margin: 0px 30px;
 }
-/* line 332, assets/less/common.less */
+/* line 334, assets/less/common.less */
 .footer .notice {
   margin-bottom: 44px;
 }
-/* line 335, assets/less/common.less */
+/* line 337, assets/less/common.less */
 .footer .notice span {
   display: block;
   color: #fff;
   font-size: 10px;
   color: #757474;
 }
-/* line 343, assets/less/common.less */
+/* line 345, assets/less/common.less */
 .footer .end {
   border-top: 1px #262626 solid;
 }
-/* line 346, assets/less/common.less */
+/* line 348, assets/less/common.less */
 .footer .end ul {
   height: 80px;
   line-height: 80px;
 }
-/* line 347, assets/less/common.less */
+/* line 349, assets/less/common.less */
 .footer .end ul li {
   color: #757474;
   float: left;
   font-size: 13px;
   margin: 0 30px;
 }
-/* line 348, assets/less/common.less */
+/* line 350, assets/less/common.less */
 .footer .end ul li a {
   color: #757474;
 }
-/* line 350, assets/less/common.less */
+/* line 352, assets/less/common.less */
 .footer .end ul .marginfix {
   margin: 0;
 }
-/* line 351, assets/less/common.less */
+/* line 353, assets/less/common.less */
 .footer .end ul .fr {
   float: right;
 }
@@ -640,22 +641,82 @@ section.news .hallBtn:hover span {
   margin: 0 auto;
 }
 /* line 8, assets/less/piscis.less */
+.wrap .innersec {
+  min-height: 600px;
+}
+/* line 10, assets/less/piscis.less */
 .wrap .sub_nav {
   outline: 1px #f0f solid;
   width: 220px;
   position: fixed;
   top: 0;
-  padding: 40px;
   backface-visibility: hidden;
+  z-index: -1;
 }
-/* line 16, assets/less/piscis.less */
-.wrap .mainContent {
-  outline: 1px #00f solid;
-  margin-left: 220px;
-  padding-top: 40px;
-  padding-right: 40px;
+/* line 18, assets/less/piscis.less */
+.wrap .sub_nav .sublogo {
+  width: 220px;
+}
+/* line 19, assets/less/piscis.less */
+.wrap .sub_nav .sublogo img {
+  width: 100%;
 }
 /* line 22, assets/less/piscis.less */
-.wrap .mainContent .about_piscis {
-  max-width: 878px;
+.wrap .sub_nav nav {
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 25, assets/less/piscis.less */
+.wrap .sub_nav nav li {
+  padding-top: 10px;
+}
+/* line 26, assets/less/piscis.less */
+.wrap .sub_nav nav a {
+  color: #000;
+}
+/* line 32, assets/less/piscis.less */
+.wrap .mainContent {
+  outline: 1px #f00 solid;
+  margin-left: 220px;
+  min-height: calc(-150vh);
+}
+/* line 39, assets/less/piscis.less */
+.wrap .mainContent header .bannerImg {
+  background: url(../../image/pic/main.png);
+  height: 350px;
+  background-size: cover;
+}
+/* line 44, assets/less/piscis.less */
+.wrap .mainContent header .calendarBtn {
+  display: inline-block;
+  padding: 14px;
+  font-size: .65em;
+  width: 129px;
+  text-align: center;
+  border: 1px #fff solid;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+/* line 54, assets/less/piscis.less */
+.wrap .mainContent header .calendarBtn a {
+  color: #fff;
+}
+/* line 58, assets/less/piscis.less */
+.wrap .mainContent .introduction {
+  max-width: 900px;
+}
+/* line 61, assets/less/piscis.less */
+.wrap .mainContent .about_piscis .name {
+  font-size: 30px;
+  font-family: 'Libre Baskerville', serif;
+  text-transform: uppercase;
+  letter-spacing: .35em;
+}
+/* line 69, assets/less/piscis.less */
+.wrap .mainContent .sub {
+  border: 1px #00f solid;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 15px !important;
+  padding-top: 10px;
 }
