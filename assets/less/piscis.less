@@ -1,14 +1,13 @@
 
 .wrap{
-  border: 1px #f00 solid;
+  //border: 1px #f00 solid;
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
 
-  .innersec{min-height: 600px;}
 
   .sub_nav{
-    outline: 1px #f0f solid;
+    //outline: 1px #f0f solid;
     width: 220px;
     position: fixed;
     top: 0;
@@ -22,7 +21,23 @@
     nav{
       text-align: center;
       text-transform: uppercase;
-      li{padding-top: 10px;}
+      font-weight: bold;
+      li{
+        padding-top: 10px;
+
+        &::before{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 267px;
+          left: 10px;
+          background-color: #000;
+          height: 6px;
+          width: 6px;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+        }
+      }
       a{color: #000;}
     }// nav close
 
@@ -30,7 +45,7 @@
   } // sub_nav close
 
   .mainContent{
-    outline: 1px #f00 solid;
+    //outline: 1px #f00 solid;
     margin-left: 220px;
     min-height: calc(100vh - 250px);
 
@@ -43,22 +58,38 @@
       }
       .calendarBtn{
         display: inline-block;
-        padding: 14px;
+        padding: 10px;
         font-size: .65em;
-        width: 129px;
+        letter-spacing: .16em;
+        text-transform: uppercase;
+        width: 140px;
         text-align: center;
         border: 1px @color-white solid;
         position: absolute;
-        top: 40px;
+        top: 22px;
         right: 40px;
-        a{color: #fff;}
+
+        a{color: #fff;
+          span{vertical-align: middle;}
+        }
+        svg{
+          display: inline-block;
+          line-height: .65em;
+          width: 20px;
+          height: 22px;
+          vertical-align: middle;
+        }
       }
     } //header close
 
-    .introduction{max-width: 900px;}
+    .introduction{
+      max-width: 900px;
+      height: 550px;
+    }
 
     .about_piscis{
       .name{
+        padding-top: 30px;
         font-size: 30px;
         font-family: 'Libre Baskerville', serif;
         text-transform: uppercase;
@@ -67,10 +98,30 @@
     } //about_piscis close
 
     .sub{
-      border: 1px #00f solid;
+      //border: 1px #00f solid;
       font-family: 'Libre Baskerville', serif;
       font-size: 15px !important;
-      padding-top: 10px;
+      padding: 10px 0 5px;
+    }
+
+    .returnBtn{
+      display: inline-block;
+      margin-top: 50px;
+
+      svg{
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+      span{
+        color: #000;
+        vertical-align: sub;
+        font-weight: bold;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
     }
 
 
