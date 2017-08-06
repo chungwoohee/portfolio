@@ -56,30 +56,38 @@
         height: 350px;
         background-size: cover;
       }
-      .calendarBtn{
-        display: inline-block;
-        padding: 10px;
-        font-size: .65em;
-        letter-spacing: .16em;
-        text-transform: uppercase;
-        width: 140px;
-        text-align: center;
-        border: 1px @color-white solid;
-        position: absolute;
-        top: 22px;
-        right: 40px;
+      .calendar{
 
-        a{color: #fff;
-          span{vertical-align: middle;}
-        }
-        svg{
+        .Btn{
+          outline: 1px #f00 solid;
+          position: absolute;
+          top: 22px;
+          right: 40px;
+          padding: 10px;
+          font-size: .65em;
+          letter-spacing: .16em;
+          text-transform: uppercase;
+          width: 140px;
+          text-align: center;
+          border: 1px @color-white solid;
           display: inline-block;
-          line-height: .65em;
-          width: 20px;
-          height: 22px;
-          vertical-align: middle;
+
+          a{
+            color: #fff;
+            span{
+              vertical-align: middle;
+            }
+          }
+          svg{
+            display: inline-block;
+            line-height: .65em;
+            width: 20px;
+            height: 22px;
+            vertical-align: middle;
+          }
         }
-      }
+
+      } //calendar close
     } //header close
 
     .introduction{
