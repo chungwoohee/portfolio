@@ -1,8 +1,7 @@
 
-.wrap{
+.subwrap{
   //border: 1px #f00 solid;
   width: 100%;
-  max-width: 1600px;
   margin: 0 auto;
 
 
@@ -12,7 +11,7 @@
     position: fixed;
     top: 0;
     backface-visibility: hidden;
-    z-index: -1;
+    z-index: 2;
 
     .sublogo{width: 220px;
       img{width: 100%}
@@ -24,33 +23,39 @@
       font-weight: bold;
       li{
         padding-top: 10px;
+        position: relative;
 
         &::before{
           content: "";
           display: inline-block;
           position: absolute;
-          top: 267px;
-          left: 10px;
+          display: none;
+          top: 19px;
+          left: 9px;
           background-color: #000;
           height: 6px;
           width: 6px;
           border-radius: 50%;
           -webkit-border-radius: 50%;
         }
+        &:hover::before{
+          display:block;
+        }
       }
       a{color: #000;}
     }// nav close
-
 
   } // sub_nav close
 
   .mainContent{
     //outline: 1px #f00 solid;
+    max-width: 1600px;
     margin-left: 220px;
     min-height: calc(100vh - 250px);
 
     header{
-      //position: relative;
+      position: relative;
+
       .bannerImg{
         background: url(../../image/pic/main.png);
         height: 350px;
@@ -59,10 +64,9 @@
       .calendar{
 
         .Btn{
-          outline: 1px #f00 solid;
           position: absolute;
           top: 22px;
-          right: 40px;
+          right: 20px;
           padding: 10px;
           font-size: .65em;
           letter-spacing: .16em;
@@ -72,12 +76,11 @@
           border: 1px @color-white solid;
           display: inline-block;
 
-          a{
+          span{
             color: #fff;
-            span{
-              vertical-align: middle;
-            }
+            vertical-align: middle;
           }
+
           svg{
             display: inline-block;
             line-height: .65em;

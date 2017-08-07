@@ -72,10 +72,9 @@ $(function () {
 
     $click.on({
       "click":function(){
-        $(this).find('.sl').stop().slideUp();
+        $('.slidemenu>ul>li').find('.sl').stop().slideUp();
       }
-    })  //글씨 사라지는것 수정할것.
-
+    })
 
 
 })
