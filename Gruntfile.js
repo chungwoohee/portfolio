@@ -44,6 +44,13 @@ module.exports = function(grunt) {
             spawn: false,
             },
         },
+        scripts: {
+            files: ['assets/javascript/*.js'],
+            tasks: ['js'],
+            options: {
+            spawn: false,
+            },
+        },
     },
 
     includes: { //복수로 여러개
